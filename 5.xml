@@ -7,7 +7,7 @@
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param3][/COLOR][/B]</title>
+<title>[B][COLOR white][makelist.param1][/COLOR][/B]</title>
 <link>$doregex[play]</link>
 <thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
 <fanart></fanart>
