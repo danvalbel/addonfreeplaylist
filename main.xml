@@ -40,8 +40,7 @@
 <name>makelist</name>
 <listrepeat><![CDATA[
 <title>[B][COLOR white][makelist.param1][/COLOR][/B]</title>
-<link>na</link>
-<externallink>[makelist.param1]</externallink>
+<link>[makelist.param1]</link>
 <thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
