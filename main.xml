@@ -32,22 +32,6 @@
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
 
-<item>
-<title>[COLOR white][B]U.m3uiptv.com[/B][/COLOR]</title>       
-<link>$doregex[makelist]</link>
-<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param1][/COLOR][/B]</title>
-<link>[makelist.param1]</link>
-<thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
-<fanart>https://www.televall.online/</fanart>
-]]></listrepeat>
-<expres><![CDATA[(?s)<p>(http.+?)<\/p>]]></expres>
-<page>https://u.m3uiptv.com/free-iptv-links-m3u-playlists-updated-02-03-2024/</page>
-</regex>
-</item>
 
 
 </items>
