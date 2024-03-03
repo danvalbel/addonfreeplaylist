@@ -1,7 +1,7 @@
 <items>
 
 <item>
-<title>[COLOR white][B]Televall Basico[/B][/COLOR]</title>       
+<title>[COLOR white][B]TPRUEBA[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <regex>
@@ -12,8 +12,8 @@
 <thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
 <fanart></fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)<a href="(.+?.php)" .*?img src="(.+?)".*?text: '(.+?)']]></expres>
-<page>https://www.televall.online/basico.html</page>
+<expres><![CDATA[(?s)<p>(http.+?)<\/p>]]></expres>
+<page>https://u.m3uiptv.com/free-iptv-links-m3u-playlists-updated-02-03-2024/</page>
 </regex>
 
 <regex>
