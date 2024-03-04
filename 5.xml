@@ -8,7 +8,7 @@
   <name>makelist</name>
   <listrepeat><![CDATA[
   <title>[B][COLOR white][makelist.param1][/COLOR][/B]</title>
-  <link>nada</link>
+  <link>[makelist.param1]</link>
   <externallink>[makelist.param1]</externallink>
   <thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
   <fanart></fanart>
