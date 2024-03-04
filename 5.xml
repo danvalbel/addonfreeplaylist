@@ -1,21 +1,27 @@
 <items>
 
-<item>
-<title>[COLOR white][B]TPRUEBA[/B][/COLOR]</title>       
-<link>$doregex[makelist]</link>
-<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
-  <regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-  <title>[B][COLOR white][makelist.param1][/COLOR][/B]</title>
-  <link>[makelist.param1]</link>
-  <externallink>[makelist.param1]</externallink>
-  <thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
-  <fanart></fanart>
-  ]]></listrepeat>
-  <expres><![CDATA[(?s)<p>(http.+?)<\/p>]]></expres>
-  <page>https://u.m3uiptv.com/free-iptv-links-m3u-playlists-updated-02-03-2024/</page>
-  </regex>
+<item> 
+<title>[COLOR white][B]1 TPRUEBA[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR white][makelist.param2][/COLOR][/B]</title> 
+  <link>na</link> 
+  <externallink>$doregex[limpiar_enlace]$$TSDOWNLOADER$$</externallink> 
+  <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail> 
+  <fanart>https://www.televall.online/images/televall_3.jpg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[(?s)<p>(http.+?=(.*?)&.*?)<\/p>]]></expres> 
+  <page>https://u.m3uiptv.com/free-iptv-links-m3u-playlists-updated-02-03-2024/</page> 
+  </regex> 
+<regex> 
+<name>limpiar_enlace</name> 
+<expres>$pyFunction:('[makelist.param1]').replace('#038;','')</expres> 
+<page></page> 
+</regex> 
+<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail> 
+<fanart>https://www.televall.online/images/televall_3.jpg</fanart> 
 </item>
 ------------------------------------------------------------
 
