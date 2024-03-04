@@ -4,18 +4,28 @@
 <title>[COLOR white][B]TPRUEBA[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param1][/COLOR][/B]</title>
-<link>na</link>
-<externallink>[makelist.param1]</externallink>
-<thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
-<fanart></fanart>
-]]></listrepeat>
-<expres><![CDATA[(?s)<p>(http.+?)<\/p>]]></expres>
-<page>https://u.m3uiptv.com/free-iptv-links-m3u-playlists-updated-02-03-2024/</page>
-</regex>
+  <regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+  <title>[B][COLOR white][makelist.param1][/COLOR][/B]</title>
+  <link>$doregex[makelist1]</link>
+  <thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
+  <fanart></fanart>
+  ]]></listrepeat>
+  <expres><![CDATA[(?s)<p>(http.+?)<\/p>]]></expres>
+  <page>https://u.m3uiptv.com/free-iptv-links-m3u-playlists-updated-02-03-2024/</page>
+  </regex>
+  <regex>
+  <name>makelist1</name>
+  <listrepeat><![CDATA[
+  <title>[B][COLOR white][makelist1.param1][/COLOR][/B]</title>
+  <link>$doregex[makelist1]</link>
+  <thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
+  <fanart></fanart>
+  ]]></listrepeat>
+  <expres><![CDATA[(?s)#EXTINF:-1,(.*?\W.*).*?\W(http.+?\W.*)]]></expres>
+  <page>[makelist.param2]</page>
+  </regex>
 
 <regex>
 <name>play</name>
