@@ -39,7 +39,7 @@
   <expres><![CDATA[(?s)itemprop="headline"><a href="(.*?)" rel="bookmark">(.*?)<]]></expres> 
   <page>https://u.m3uiptv.com/category/iptv-free-m3u-17/</page> 
   </regex>
-   <regex> 
+  <regex> 
   <name>makelist1</name> 
   <listrepeat><![CDATA[ 
   <title>[B][COLOR white][makelist1.param2][/COLOR][/B]</title> 
@@ -53,7 +53,7 @@
   </regex> 
 <regex> 
 <name>limpiar_enlace</name> 
-<expres>$pyFunction:('[makelist.param1]').replace('#038;','')</expres> 
+<expres>$pyFunction:('[makelist1.param1]').replace('#038;','')</expres> 
 <page></page> 
 </regex> 
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail> 
