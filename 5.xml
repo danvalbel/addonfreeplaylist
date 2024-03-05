@@ -42,13 +42,13 @@
   <regex> 
   <name>makelist1</name> 
   <listrepeat><![CDATA[ 
-  <title>[B][COLOR white][makelist1.param2][/COLOR][/B]</title> 
+  <title>[B][COLOR white][makelist1.param1][/COLOR][/B]</title> 
   <link>na</link> 
   <externallink>$doregex[limpiar_enlace]$$TSDOWNLOADER$$</externallink> 
   <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail> 
   <fanart>https://www.televall.online/images/televall_3.jpg</fanart> 
   ]]></listrepeat> 
-  <expres><![CDATA[(?s)<p>(http.+?=(.*?)&.*?)<\/p>]]></expres> 
+  <expres><![CDATA[(?s)<p>(http.*?)<\/p>]]></expres> 
   <page>[makelist.param1]</page> 
   </regex> 
 <regex> 
