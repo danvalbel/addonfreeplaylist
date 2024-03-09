@@ -32,10 +32,18 @@
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
 
- <item>
-<title>Televall.online</title>
+<item>
+<title>U.m3uiptv.com</title>
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/5.xml</externallink>
+<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+</item>
+
+<item>
+<title>prueba</title>
+<link>na</link>
+<externallink>https://pastebin.com/raw/aT9bBfFb</externallink>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
