@@ -25,7 +25,7 @@
 </item>
 
 <item>
-<title>[COLOR white][B]Televall.online[/B][/COLOR]</title>
+<title>[COLOR pink][B]Televall.online[/B][/COLOR]</title>
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/3.xml</externallink>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
@@ -41,7 +41,7 @@
 </item>
 
 <item> 
-<title>[COLOR Silver][B]Agenda deportiva[/B][/COLOR]</title>        
+<title>[COLOR cyan][B]Agenda deportiva[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
