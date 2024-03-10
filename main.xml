@@ -40,10 +40,25 @@
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
 
-<item>
-<title>prueba</title>
-<link>na</link>
-<externallink>https://pastebin.com/raw/aT9bBfFb</externallink>
+<item> 
+<title>[COLOR white][B]Agenda deportiva[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[COLOR lime][makelist.param1][/COLOR] [COLOR orange][makelist.param2][/COLOR][COLOR skyblue][makelist.param3][/COLOR]  [COLOR yellow][makelist.param4][/COLOR][B][COLOR lime][makelist.param5][/COLOR][/B]</title> 
+  <link>$doregex[play]</link> 
+  <thumbnail>https://ligatv.televall.online/[makelist.param7]</thumbnail> 
+  <fanart>https://www.televall.online/images/televall_3.jpg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[(?s)class="fs12lh1-5">.+?(Partidos de.+?)<|<div><b><span class="fs12lh1-5">(.+?)<|class="t">(\d\d:\d\d)<.+?fs11lh1-5 cf2">(.+?)<|x5engine.utils.location\('(.+?)(.php)'.+?src="(.+?)"]]></expres> 
+  <page>https://ligatv.televall.online/</page> 
+  </regex> 
+<regex>
+<name>play</name>
+<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
+<page>http://cafut.televall.online/[makelist.param5][makelist.param6]</page>
+</regex>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
