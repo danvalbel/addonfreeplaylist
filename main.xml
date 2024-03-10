@@ -36,7 +36,7 @@
 <title>[COLOR gold][B]U.m3uiptv.com[/B][/COLOR][COLOR red][B] VPN[/B][/COLOR]</title>
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/5.xml</externallink>
-<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
+<thumbnail>https://github.com/danvalbel/addonfreeplaylist/blob/main/free-premium-channel-m3u8-lists-300x141.jpg?raw=true</thumbnail>
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
 
@@ -59,7 +59,7 @@
 <expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
 <page>http://cafut.televall.online/[makelist.param5][makelist.param6]</page>
 </regex>
-<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
+<thumbnail>https://ligatv.televall.online/images/ligatv2.jpg</thumbnail>
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
   
