@@ -81,4 +81,13 @@
 <page>https://allaboutiptv.com/iptv-m3u-playlist-url/</page>
 </regex>
 </item>
+
+<item>
+<title>[COLOR gold][B]prueba[/B][/COLOR][COLOR red][B] VPN[/B][/COLOR]</title>
+<link>na</link>
+<externallink>https://pastebin.com/raw/SpgEnTbp</externallink>
+<thumbnail>https://github.com/danvalbel/addonfreeplaylist/blob/main/free-premium-channel-m3u8-lists-300x141.jpg?raw=true</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+</item>
+
 </items>
