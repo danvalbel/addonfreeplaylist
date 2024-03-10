@@ -63,13 +63,22 @@
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
 
-
 <item>
-<title>[COLOR gold][B]Allaboutiptv.com[/B][/COLOR][COLOR red][B] VPN[/B][/COLOR]</title>
-<link>na</link>
-<externallink>https://pastebin.com/raw/SpgEnTbp</externallink>
-<thumbnail>https://github.com/danvalbel/addonfreeplaylist/blob/main/free-premium-channel-m3u8-lists-300x141.jpg?raw=true</thumbnail>
+<title>[COLOR gold][B]Allaboutiptv.com[/B][/COLOR][COLOR red][B] VPN[/B][/COLOR]</title>    
+<link>$doregex[makelist]</link>
+<thumbnail>https://s.alicdn.com/@sc04/kf/Hb721f4dd15dc408ba9a741eb4862d465G.png_300x300.jpg</thumbnail>
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[B][COLOR white][makelist.param1][/COLOR][/B]</title>
+<link>na</link>
+<externallink>[makelist.param2]</externallink>
+<thumbnail>https://s.alicdn.com/@sc04/kf/Hb721f4dd15dc408ba9a741eb4862d465G.png_300x300.jpg</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)td>(\w.+?)<.+?<a href="(.+?)"]]></expres>
+<page>https://allaboutiptv.com/iptv-m3u-playlist-url/</page>
+</regex>
 </item>
-  
 </items>
