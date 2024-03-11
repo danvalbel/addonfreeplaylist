@@ -6,7 +6,7 @@
   <regex> 
   <name>makelist</name> 
   <listrepeat><![CDATA[ 
-  <title>[COLOR lime][makelist.param1][makelist.param2][/COLOR] [B][COLOR skyblue][makelist.param3][/COLOR][/B]</title> 
+  <title>[B][COLOR lime][makelist.param1][makelist.param2][/COLOR] [COLOR skyblue][makelist.param3][/COLOR][/B]</title> 
   <link>na</link> 
   <thumbnail>https://www.diainternacionalde.com[makelist.param4]</thumbnail> 
   <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
