@@ -16,6 +16,22 @@
   </regex> 
 </item>
 
+<item> 
+<title>[COLOR cyan][B]El tiempo en las principales ciudades[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR lime][makelist.param1][/COLOR] [COLOR skyblue][makelist.param2] [makelist.param3] [makelist.param4] [makelist.param5] [makelist.param6][/COLOR][/B]</title> 
+  <link>na</link> 
+  <thumbnail>https://www.diainternacionalde.com[makelist.param4]</thumbnail> 
+  <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[(?s)"item-principal --izq">.+?card">.+?lex-r"> <h4.+?title-mod">(.+?)<|col li-card--txt.+?text-sec.+?title=".+?">(.+?)<.+?row.+?class="(.+?) .+?data="(.+?)\|.+?class="(.+?) .+?data="(.+?)\|.+?alt="(.+?)"]]></expres> 
+  <page>https://www.tiempo.com/</page> 
+  </regex> 
+</item>
+  
 <item>
 <title>[B]+++++++++++++++++++++++++++++++++++++++++++++++++[/B]</title>
 <link>na</link>
