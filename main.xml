@@ -69,7 +69,7 @@
 </item>
 
 <item>
-<title>[COLOR white][B]Televall.online Basico[/B][/COLOR]</title>       
+<title>[COLOR orange][B]Televall.online Basico[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <regex>
@@ -95,7 +95,7 @@
 
   
 <item>
-<title>[COLOR white][B]Televall.online Kids[/B][/COLOR]</title>       
+<title>[COLOR yellow][B]Televall.online Kids[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <regex>
@@ -121,7 +121,7 @@
 
   
 <item>
-<title>[COLOR white][B]Televall.online Premium[/B][/COLOR]</title>       
+<title>[COLOR blue][B]Televall.online Premium[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <regex>
@@ -157,18 +157,6 @@
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/1.xml</externallink>
 <thumbnail>https://pbs.twimg.com/profile_images/1357011084914249728/aTFs9i8f_200x200.jpg</thumbnail>
-<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
-</item>
-
-  
------------------------------------------------------------------------
-
-  
-<item>
-<title>[COLOR gold][B]U.m3uiptv.com[/B][/COLOR][COLOR red][B] VPN[/B][/COLOR]</title>
-<link>na</link>
-<externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/5.xml</externallink>
-<thumbnail>https://github.com/danvalbel/addonfreeplaylist/blob/main/free-premium-channel-m3u8-lists-300x141.jpg?raw=true</thumbnail>
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
 
@@ -276,7 +264,7 @@
 --------------------------------------------------------------------
 
 <item>
-<title>[COLOR white][B]Televall Deportivos[/B][/COLOR]</title>       
+<title>[COLOR green][B]Canales Deportivos Televall.online [/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <regex>
