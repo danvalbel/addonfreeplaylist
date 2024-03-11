@@ -1,7 +1,7 @@
 <items>
 
 <item> 
-<title>[COLOR cyan][B]Hoy es el dia internacional de....[/B][/COLOR]</title>        
+<title>[COLOR cyan][B]$doregex[makelist][/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
