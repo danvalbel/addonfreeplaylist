@@ -1,5 +1,30 @@
 <items>
 
+<item> 
+<title>[COLOR cyan][B]Hoy es el dia internacional de....[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[COLOR lime][makelist.param1][/COLOR] [B][COLOR skyblue][makelist.param2][/COLOR][/B]</title> 
+  <link>na</link> 
+  <thumbnail>https://www.diainternacionalde.com[makelist.param3]</thumbnail> 
+  <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[(?s)se celebra hoy">(.+?)</h1>|col3.+?class="bqDestacadoV">.+?title="(.+?)".+?img src="(.+?)"]]></expres> 
+  <page>https://www.diainternacionalde.com/</page> 
+  </regex> 
+</item>
+
+<item>
+<title>[B]+++++++++++++++++++++++++++++++++++++++++++++++++[/B]</title>
+<link>na</link>
+<externallink>https://raw.githubusercontent.com/</externallink>
+<thumbnail>https://i.imgur.com/mARBUac.jpeg</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+</item>
+
+
 <item>
 <title>[COLOR lime][B]Github.com/LaQuay/TDTChannels[/B][/COLOR]</title>
 <link>na</link>
