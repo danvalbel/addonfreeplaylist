@@ -22,7 +22,7 @@
   <regex> 
   <name>makelist</name> 
   <listrepeat><![CDATA[ 
-  <title>[B][COLOR lime][makelist.param1][/COLOR] [COLOR skyblue][makelist.param2] [makelist.param3] [makelist.param4] [makelist.param5] [makelist.param6][/COLOR][/B]</title> 
+  <title>[B][COLOR lime][makelist.param1][/COLOR] [COLOR white][makelist.param2][/COLOR] [COLOR red][makelist.param3] [makelist.param4][/COLOR] [COLOR skyblue][makelist.param5] [makelist.param6][/COLOR] [COLOR white][makelist.param7][/COLOR][/B]</title> 
   <link>na</link> 
   <thumbnail>https://www.diainternacionalde.com[makelist.param4]</thumbnail> 
   <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
