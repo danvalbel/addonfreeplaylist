@@ -32,23 +32,126 @@
   </regex> 
 </item>
   
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  
 <item>
-<title>[B]+++++++++++++Canales de Tv++++++++++++++++[/B]</title>
+<title>[B]+++++++++Canales TDT y Radio España++++++++++[/B]</title>
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/</externallink>
 <thumbnail>https://i.imgur.com/mARBUac.jpeg</thumbnail>
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
 
-
 <item>
-<title>[COLOR lime][B]Github.com/LaQuay/TDTChannels[/B][/COLOR]</title>
-<link>na</link>
-<externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/4.xml</externallink>
+<title>[COLOR lime][B]Tdtchannels.com[/B][/COLOR] </title>
+<link>NA</link>  
+<externallink>https://www.tdtchannels.com/lists/tv.m3u</externallink> 
 <thumbnail>https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg</thumbnail>
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
+  
+<item>
+<title>[COLOR pink][B]Radio- Tdtchannels.com[/B][/COLOR]</title>
+<link>NA</link>  
+<externallink>https://www.tdtchannels.com/lists/radio.m3u</externallink> 
+<thumbnail>https://i.imgur.com/bsAa4MV.jpeg</thumbnail>
+<fanart>https://i.imgur.com/BuL1hDr.jpeg</fanart>
+</item>
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  
+<item>
+<title>[B]+++++++++Canales Latino-Americanos++++++++++[/B]</title>
+<link>na</link>
+<externallink>https://raw.githubusercontent.com/</externallink>
+<thumbnail>https://i.imgur.com/mARBUac.jpeg</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+</item>
+
+<item>
+<title>[COLOR white][B]Televall.online Basico[/B][/COLOR]</title>       
+<link>$doregex[makelist]</link>
+<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[B][COLOR white][makelist.param3][/COLOR][/B]</title>
+<link>$doregex[play]</link>
+<thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)<a href="(.+?.php)" .*?img src="(.+?)".*?text: '(.+?)']]></expres>
+<page>https://www.televall.online/basico.html</page>
+</regex>
+<regex>
+<name>play</name>
+<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
+<page>http://catv.televall.online/[makelist.param1]</page>
+</regex>
+</item>
+
+  
+---------------------------------------------
+
+  
+<item>
+<title>[COLOR white][B]Televall.online Kids[/B][/COLOR]</title>       
+<link>$doregex[makelist]</link>
+<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[B][COLOR white][makelist.param3][/COLOR][/B]</title>
+<link>$doregex[play]</link>
+<thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)<a href=\"https://www.televall.online/(.*?php).+?src=\"(.*?png).+?text: '(.*?)']]></expres>
+<page>https://www.televall.online/kids.html</page>
+</regex>
+<regex>
+<name>play</name>
+<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
+<page>http://catv.televall.online/[makelist.param1]</page>
+</regex>
+</item>
+
+  
+--------------------------------------------------------------------
+
+  
+<item>
+<title>[COLOR white][B]Televall.online Premium[/B][/COLOR]</title>       
+<link>$doregex[makelist]</link>
+<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[B][COLOR white][makelist.param3][/COLOR][/B]</title>
+<link>$doregex[play]</link>
+<thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)<a href=\"https://www.televall.online/(.*?php).+?src=\"(.*?png).+?text: '(.*?)']]></expres>
+<page>https://www.televall.online/premium.html</page>
+</regex>
+<regex>
+<name>play</name>
+<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
+<page>http://catv.televall.online/[makelist.param1]</page>
+</regex>
+</item>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  
+<item>
+<title>[B]+++++++++Canales Internacionales++++++++++[/B]</title>
+<link>na</link>
+<externallink>https://raw.githubusercontent.com/</externallink>
+<thumbnail>https://i.imgur.com/mARBUac.jpeg</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+</item>
+  
 <item>
 <title>[COLOR yellow][B]troypoint.com[/B][/COLOR]</title>
 <link>na</link>
@@ -57,22 +160,10 @@
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
 
-<item>
-<title>[COLOR skyblue][B]Iteleflix.com[/B][/COLOR]</title>
-<link>na</link>
-<externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/2.xml</externallink>
-<thumbnail>https://iteleflix.com/archivos/logo-iteleflix.png</thumbnail>
-<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
-</item>
+  
+-----------------------------------------------------------------------
 
-<item>
-<title>[COLOR pink][B]Televall.online[/B][/COLOR]</title>
-<link>na</link>
-<externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/3.xml</externallink>
-<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
-<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
-</item>
-
+  
 <item>
 <title>[COLOR gold][B]U.m3uiptv.com[/B][/COLOR][COLOR red][B] VPN[/B][/COLOR]</title>
 <link>na</link>
@@ -81,8 +172,86 @@
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
 
+  
+-----------------------------------------------------------------------
+
+  
 <item> 
-<title>[COLOR cyan][B]Agenda deportiva[/B][/COLOR]</title>        
+<title>[COLOR gold][B]U.m3uiptv.com[/B][/COLOR][COLOR red][B] VPN[/B][/COLOR]</title>     
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR white][makelist.param2][/COLOR][/B]</title> 
+  <link>$doregex[makelist1]</link> 
+  <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail> 
+  <fanart>https://www.televall.online/images/televall_3.jpg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[(?s)itemprop="headline"><a href="(.*?)" rel="bookmark">(.*?)<]]></expres> 
+  <page>https://u.m3uiptv.com/category/iptv-free-m3u-17/</page> 
+  </regex>
+  <regex> 
+  <name>makelist1</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR white][makelist1.param1][/COLOR][/B]</title> 
+  <link>na</link> 
+  <externallink>$doregex[limpiar_enlace]$$TSDOWNLOADER$$</externallink> 
+  <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail> 
+  <fanart>https://www.televall.online/images/televall_3.jpg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[(?s)<p>(http.*?)<\/p>]]></expres> 
+  <page>[makelist.param1]</page> 
+  </regex> 
+<regex> 
+<name>limpiar_enlace</name> 
+<expres>$pyFunction:('[makelist1.param1]').replace('#038;','')</expres> 
+<page></page> 
+</regex> 
+<thumbnail>https://github.com/danvalbel/addonfreeplaylist/blob/main/free-premium-channel-m3u8-lists-300x141.jpg?raw=true</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+</item>
+
+  
+----------------------------------------------------------------------------------
+
+  
+<item>
+<title>[COLOR pink][B]Allaboutiptv.com[/B][/COLOR]</title>    
+<link>$doregex[makelist]</link>
+<thumbnail>https://s.alicdn.com/@sc04/kf/Hb721f4dd15dc408ba9a741eb4862d465G.png_300x300.jpg</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[B][COLOR white][makelist.param1][/COLOR][/B]</title>
+<link>na</link>
+<externallink>[makelist.param2]</externallink>
+<thumbnail>https://s.alicdn.com/@sc04/kf/Hb721f4dd15dc408ba9a741eb4862d465G.png_300x300.jpg</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)td>(\w.+?)<.+?<a href="(.+?)"]]></expres>
+<page>https://allaboutiptv.com/iptv-m3u-playlist-url/</page>
+</regex>
+</item>
+
+  
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+  
+<item>
+<title>[B]+++++++++Canales Deportivos++++++++++[/B]</title>
+<link>na</link>
+<externallink>https://raw.githubusercontent.com/</externallink>
+<thumbnail>https://i.imgur.com/mARBUac.jpeg</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+</item>
+
+
+  
+<item> 
+<title>[COLOR cyan][B]Agenda deportiva Televall.online[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -104,31 +273,31 @@
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
 
+--------------------------------------------------------------------
+
 <item>
-<title>[COLOR pink][B]Allaboutiptv.com[/B][/COLOR]</title>    
+<title>[COLOR white][B]Televall Deportivos[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
-<thumbnail>https://s.alicdn.com/@sc04/kf/Hb721f4dd15dc408ba9a741eb4862d465G.png_300x300.jpg</thumbnail>
-<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param1][/COLOR][/B]</title>
-<link>na</link>
-<externallink>[makelist.param2]</externallink>
-<thumbnail>https://s.alicdn.com/@sc04/kf/Hb721f4dd15dc408ba9a741eb4862d465G.png_300x300.jpg</thumbnail>
-<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+<title>[B][COLOR white][makelist.param3][/COLOR][/B]</title>
+<link>$doregex[play]</link>
+<thumbnail>https://ligatv.televall.online/[makelist.param2]</thumbnail>
+<fanart></fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)td>(\w.+?)<.+?<a href="(.+?)"]]></expres>
-<page>https://allaboutiptv.com/iptv-m3u-playlist-url/</page>
+<expres><![CDATA[(?s)<a href=\"https://ligatv.televall.online/(.*?php).+?src=\"(.*?png).+?text: '(.*?)']]></expres>
+<page>https://ligatv.televall.online/</page>
+</regex>
+
+<regex>
+<name>play</name>
+<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
+<page>http://cafut.televall.online/[makelist.param1]</page>
 </regex>
 </item>
 
-<item>
-<title>[COLOR gold][B]prueba[/B][/COLOR][COLOR red][B] VPN[/B][/COLOR]</title>
-<link>na</link>
-<externallink>https://pastebin.com/raw/SpgEnTbp</externallink>
-<thumbnail>https://github.com/danvalbel/addonfreeplaylist/blob/main/free-premium-channel-m3u8-lists-300x141.jpg?raw=true</thumbnail>
-<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
-</item>
+
 
 </items>
