@@ -1,17 +1,17 @@
 <items>
 
 <item> 
-<title>[COLOR cyan][B]$doregex[makelist][/B][/COLOR]</title>        
+<title>[COLOR cyan][B]Que se celebra hoy...[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
   <listrepeat><![CDATA[ 
-  <title>[COLOR lime][makelist.param1][/COLOR] [B][COLOR skyblue][makelist.param2][/COLOR][/B]</title> 
+  <title>[COLOR lime][makelist.param1][makelist.param2][/COLOR] [B][COLOR skyblue][makelist.param3][/COLOR][/B]</title> 
   <link>na</link> 
-  <thumbnail>https://www.diainternacionalde.com[makelist.param3]</thumbnail> 
+  <thumbnail>https://www.diainternacionalde.com[makelist.param4]</thumbnail> 
   <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
   ]]></listrepeat> 
-  <expres><![CDATA[(?s)se celebra hoy">(.+?)</h1>|col3.+?class="bqDestacadoV">.+?title="(.+?)".+?img src="(.+?)"]]></expres> 
+  <expres><![CDATA[(?s)<h1 class="QueSeCelebraHoy.+?title="(.+?)hoy">(.+?)<|col3.+?class="bqDestacadoV">.+?title="(.+?)".+?img src="(.+?)"]]></expres> 
   <page>https://www.diainternacionalde.com/</page> 
   </regex> 
 </item>
