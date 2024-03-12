@@ -49,6 +49,14 @@
 <thumbnail>https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg</thumbnail>
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
+
+<item>
+<title>[COLOR gold][B]Canales Tdt Iptvcrunch.com[/B][/COLOR]</title>
+<link>na</link>
+<externallink>https://iptv-org.github.io/iptv/countries/es.m3u</externallink>
+<thumbnail>https://iptvcrunch.com/wp-content/uploads/2022/05/cropped-logo-208x69.png</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+</item>
   
 <item>
 <title>[COLOR pink][B]Radio- Tdtchannels.com[/B][/COLOR]</title>
@@ -284,6 +292,14 @@
 <expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
 <page>http://cafut.televall.online/[makelist.param1]</page>
 </regex>
+</item>
+
+<item>
+<title>[B]Canales Deportivos Iptvcrunch.com[/B]</title>
+<link>na</link>
+<externallink>https://bit.ly/3AmIAFh</externallink>
+<thumbnail>https://iptvcrunch.com/wp-content/uploads/2022/05/cropped-logo-208x69.png</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
 
 
