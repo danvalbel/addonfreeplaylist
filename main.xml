@@ -11,8 +11,8 @@
   <thumbnail>https://www.diainternacionalde.com[makelist.param4]</thumbnail> 
   <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
   ]]></listrepeat> 
-  <expres><![CDATA[(?s)<td><p>(\d\d:\d\d).+?<td><p><strong>(.+?)</strong>]]></expres> 
-  <page>https://www.teletexto.com/teletexto.asp?programacion=tve1&tv=n</page> 
+  <expres><![CDATA[(?s)hora-programa">(.+?)<.*\W.+?nombre-programa">(.+?)<]]></expres> 
+  <page>https://programacion.tv/la1.html</page> 
   </regex> 
 </item>
 
