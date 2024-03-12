@@ -1,5 +1,13 @@
 <items>
 
+<item>
+<title>[B]prueba[/B]</title>
+<link>na</link>
+<externallink>https://pastebin.com/raw/jG1V0maN</externallink>
+<thumbnail>https://i.imgur.com/mARBUac.jpeg</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+</item>
+  
 <item> 
 <title>[COLOR cyan][B]programacion La 1[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
