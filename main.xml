@@ -1,7 +1,5 @@
 <items>
 
-
-  
 <item> 
 <title>[COLOR cyan][B]Que se celebra hoy...[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
