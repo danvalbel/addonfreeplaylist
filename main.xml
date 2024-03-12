@@ -49,14 +49,6 @@
 <thumbnail>https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg</thumbnail>
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
-
-<item>
-<title>[COLOR gold][B]Canales Tdt Iptvcrunch.com[/B][/COLOR]</title>
-<link>na</link>
-<externallink>https://iptv-org.github.io/iptv/countries/es.m3u</externallink>
-<thumbnail>https://iptvcrunch.com/wp-content/uploads/2022/05/cropped-logo-208x69.png</thumbnail>
-<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
-</item>
   
 <item>
 <title>[COLOR pink][B]Radio- Tdtchannels.com[/B][/COLOR]</title>
@@ -77,7 +69,7 @@
 </item>
 
 <item>
-<title>[COLOR orange][B]Televall.online Basico[/B][/COLOR]</title>       
+<title>[COLOR white][B]Televall.online Basico[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <regex>
@@ -103,7 +95,7 @@
 
   
 <item>
-<title>[COLOR yellow][B]Televall.online Kids[/B][/COLOR]</title>       
+<title>[COLOR white][B]Televall.online Kids[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <regex>
@@ -129,7 +121,7 @@
 
   
 <item>
-<title>[COLOR blue][B]Televall.online Premium[/B][/COLOR]</title>       
+<title>[COLOR white][B]Televall.online Premium[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <regex>
@@ -165,6 +157,18 @@
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/1.xml</externallink>
 <thumbnail>https://pbs.twimg.com/profile_images/1357011084914249728/aTFs9i8f_200x200.jpg</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+</item>
+
+  
+-----------------------------------------------------------------------
+
+  
+<item>
+<title>[COLOR gold][B]U.m3uiptv.com[/B][/COLOR][COLOR red][B] VPN[/B][/COLOR]</title>
+<link>na</link>
+<externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/5.xml</externallink>
+<thumbnail>https://github.com/danvalbel/addonfreeplaylist/blob/main/free-premium-channel-m3u8-lists-300x141.jpg?raw=true</thumbnail>
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
 
@@ -272,7 +276,7 @@
 --------------------------------------------------------------------
 
 <item>
-<title>[COLOR green][B]Canales Deportivos Televall.online [/B][/COLOR]</title>       
+<title>[COLOR white][B]Televall Deportivos[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <regex>
@@ -292,14 +296,6 @@
 <expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
 <page>http://cafut.televall.online/[makelist.param1]</page>
 </regex>
-</item>
-
-<item>
-<title>[B]Canales Deportivos Iptvcrunch.com[/B]</title>
-<link>na</link>
-<externallink>https://bit.ly/3AmIAFh</externallink>
-<thumbnail>https://iptvcrunch.com/wp-content/uploads/2022/05/cropped-logo-208x69.png</thumbnail>
-<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
 
 
