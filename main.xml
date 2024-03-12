@@ -35,6 +35,25 @@
   </regex> 
 </item>
 
+--------------------------------------------------------------------
+  
+<item> 
+<title>[COLOR cyan][B]Últimos resultados de Futbol[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR yellow][makelist.param1][/COLOR] [COLOR lime][makelist.param2][/COLOR] [COLOR orange][makelist.param3][/COLOR]  [COLOR iris][makelist.param4][/B][/COLOR]</title> 
+  <link>na</link> 
+  <thumbnail>https://i.imgur.com/mARBUac.jpeg</thumbnail> 
+  <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[(?s)<h3>(Últimos resultados.+?)</h3>|<li>(.+?)<span>(.+?)</span> <span>(.+?)</span>]]></expres> 
+  <page>https://www.partidos-de-hoy.com/futbol-resultados-hoy/</page> 
+  </regex> 
+</item>
+  
+
 --------------------------------------------------------------------------------------
 
 <item> 
