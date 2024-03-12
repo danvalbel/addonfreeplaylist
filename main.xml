@@ -1,7 +1,7 @@
 <items>
 
 <item> 
-<title>[COLOR cyan][B]programacion[/B][/COLOR]</title>        
+<title>[COLOR cyan][B]programacion La 1[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -11,8 +11,8 @@
   <thumbnail>https://www.diainternacionalde.com[makelist.param4]</thumbnail> 
   <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
   ]]></listrepeat> 
-  <expres><![CDATA[(?s)programa">(.+?)<.+\W.+?class="listado-nombre-programa">(.+?)<.+]]></expres> 
-  <page>https://programacion.tv/la1.html</page> 
+  <expres><![CDATA[(?s)<a href=.+?(\d\d:\d\d).+\W.+\W.+\W.+?<b>(.+?)</b>]]></expres> 
+  <page>https://www.tvguia.es/tv/programacion-la-1</page> 
   </regex> 
 </item>
 
