@@ -1,12 +1,5 @@
 <items>
 
-<item>
-<title>[B]prueba[/B]</title>
-<link>na</link>
-<externallink>https://pastebin.com/raw/jG1V0maN</externallink>
-<thumbnail>https://i.imgur.com/mARBUac.jpeg</thumbnail>
-<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
-</item>
 
 <item> 
 <title>[COLOR cyan][B]Que se celebra hoy...[/B][/COLOR]</title>        
@@ -24,6 +17,8 @@
   </regex> 
 </item>
 
+---------------------------------------------------------------------------------
+
 <item> 
 <title>[COLOR cyan][B]El tiempo en las principales ciudades[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
@@ -37,6 +32,35 @@
   ]]></listrepeat> 
   <expres><![CDATA[(?s)"item-principal --izq">.+?card">.+?lex-r"> <h4.+?title-mod">(.+?)<|col li-card--txt.+?text-sec.+?title=".+?">(.+?)<.+?row.+?class="(.+?) .+?data="(.+?)\|.+?class="(.+?) .+?data="(.+?)\|.+?alt="(.+?)"]]></expres> 
   <page>https://www.tiempo.com/</page> 
+  </regex> 
+</item>
+
+--------------------------------------------------------------------------------------
+
+<item> 
+<title>[COLOR cyan][B]Programacion TDT[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR white][makelist.param2][/B][/COLOR]</title> 
+  <link>$doregex[makelist1]</link> 
+  <thumbnail>https://i.imgur.com/mARBUac.jpeg</thumbnail> 
+  <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[(?s)<a href="(http.+?.html)">(.+?)<]]></expres> 
+  <page>https://www.programacion-tdt.com/</page> 
+  </regex> 
+  <regex> 
+  <name>makelist1</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR white][makelist1.param1] - [makelist1.param2][/B][/COLOR]</title> 
+  <link>na</link> 
+  <thumbnail>https://i.imgur.com/mARBUac.jpeg</thumbnail> 
+  <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[(?s)<td>(.+?)</td>\W.+?class="ind">.+?;(.+?)<]]></expres> 
+  <page>[makelist.param1]</page> 
   </regex> 
 </item>
   
@@ -298,7 +322,6 @@
 <expres><![CDATA[(?s)<a href=\"https://ligatv.televall.online/(.*?php).+?src=\"(.*?png).+?text: '(.*?)']]></expres>
 <page>https://ligatv.televall.online/</page>
 </regex>
-
 <regex>
 <name>play</name>
 <expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
@@ -306,6 +329,15 @@
 </regex>
 </item>
 
+---------------------------------------------------------------------
+
+<item>
+<title>[B]prueba[/B]</title>
+<link>na</link>
+<externallink>https://pastebin.com/raw/jG1V0maN</externallink>
+<thumbnail>https://i.imgur.com/mARBUac.jpeg</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+</item>
 
 
 </items>
