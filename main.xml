@@ -1,6 +1,22 @@
 <items>
 
 <item> 
+<title>[COLOR cyan][B]programacion[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR lime][makelist.param1][makelist.param2][/COLOR][/B]</title> 
+  <link>na</link> 
+  <thumbnail>https://www.diainternacionalde.com[makelist.param4]</thumbnail> 
+  <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[(?s)<td><p>(\d\d:\d\d).+?<td><p><strong>(.+?)</strong>]]></expres> 
+  <page>https://www.teletexto.com/teletexto.asp?programacion=tve1&tv=n</page> 
+  </regex> 
+</item>
+
+<item> 
 <title>[COLOR cyan][B]Que se celebra hoy...[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
@@ -69,7 +85,7 @@
 </item>
 
 <item>
-<title>[COLOR white][B]Televall.online Basico[/B][/COLOR]</title>       
+<title>[COLOR yellow][B]Televall.online Basico[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <regex>
@@ -95,7 +111,7 @@
 
   
 <item>
-<title>[COLOR white][B]Televall.online Kids[/B][/COLOR]</title>       
+<title>[COLOR blue][B]Televall.online Kids[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <regex>
@@ -121,7 +137,7 @@
 
   
 <item>
-<title>[COLOR white][B]Televall.online Premium[/B][/COLOR]</title>       
+<title>[COLOR gold][B]Televall.online Premium[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <regex>
@@ -276,7 +292,7 @@
 --------------------------------------------------------------------
 
 <item>
-<title>[COLOR white][B]Televall Deportivos[/B][/COLOR]</title>       
+<title>[COLOR pink][B]Televall Deportivos[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <regex>
