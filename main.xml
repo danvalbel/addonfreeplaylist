@@ -81,6 +81,14 @@
 <thumbnail>https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg</thumbnail>
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
+
+<item>
+<title>[COLOR gold][B]Canales Tdt Iptvcrunch.com[/B][/COLOR]</title>
+<link>na</link>
+<externallink>https://iptv-org.github.io/iptv/countries/es.m3u</externallink>
+<thumbnail>https://iptvcrunch.com/wp-content/uploads/2022/05/cropped-logo-208x69.png</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+</item>
   
 <item>
 <title>[COLOR pink][B]Radio- Tdtchannels.com[/B][/COLOR]</title>
@@ -153,7 +161,7 @@
 
   
 <item>
-<title>[COLOR gold][B]Televall.online Premium[/B][/COLOR]</title>       
+<title>[COLOR green][B]Televall.online Premium[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
 <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
 <regex>
@@ -189,57 +197,6 @@
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/1.xml</externallink>
 <thumbnail>https://pbs.twimg.com/profile_images/1357011084914249728/aTFs9i8f_200x200.jpg</thumbnail>
-<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
-</item>
-
-  
------------------------------------------------------------------------
-
-  
-<item>
-<title>[COLOR gold][B]U.m3uiptv.com[/B][/COLOR][COLOR red][B] VPN[/B][/COLOR]</title>
-<link>na</link>
-<externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/5.xml</externallink>
-<thumbnail>https://github.com/danvalbel/addonfreeplaylist/blob/main/free-premium-channel-m3u8-lists-300x141.jpg?raw=true</thumbnail>
-<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
-</item>
-
-  
------------------------------------------------------------------------
-
-  
-<item> 
-<title>[COLOR gold][B]U.m3uiptv.com[/B][/COLOR][COLOR red][B] VPN[/B][/COLOR]</title>     
-<link>$doregex[makelist]</link> 
-  <regex> 
-  <name>makelist</name> 
-  <listrepeat><![CDATA[ 
-  <title>[B][COLOR white][makelist.param2][/COLOR][/B]</title> 
-  <link>$doregex[makelist1]</link> 
-  <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail> 
-  <fanart>https://www.televall.online/images/televall_3.jpg</fanart> 
-  ]]></listrepeat> 
-  <expres><![CDATA[(?s)itemprop="headline"><a href="(.*?)" rel="bookmark">(.*?)<]]></expres> 
-  <page>https://u.m3uiptv.com/category/iptv-free-m3u-17/</page> 
-  </regex>
-  <regex> 
-  <name>makelist1</name> 
-  <listrepeat><![CDATA[ 
-  <title>[B][COLOR white][makelist1.param1][/COLOR][/B]</title> 
-  <link>na</link> 
-  <externallink>$doregex[limpiar_enlace]$$TSDOWNLOADER$$</externallink> 
-  <thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail> 
-  <fanart>https://www.televall.online/images/televall_3.jpg</fanart> 
-  ]]></listrepeat> 
-  <expres><![CDATA[(?s)<p>(http.*?)<\/p>]]></expres> 
-  <page>[makelist.param1]</page> 
-  </regex> 
-<regex> 
-<name>limpiar_enlace</name> 
-<expres>$pyFunction:('[makelist1.param1]').replace('#038;','')</expres> 
-<page></page> 
-</regex> 
-<thumbnail>https://github.com/danvalbel/addonfreeplaylist/blob/main/free-premium-channel-m3u8-lists-300x141.jpg?raw=true</thumbnail>
 <fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
 </item>
 
@@ -329,6 +286,15 @@
 </regex>
 </item>
 
+-------------------------------------------------------------
+
+<item>
+<title>[B]Canales Deportivos Iptvcrunch.com[/B]</title>
+<link>na</link>
+<externallink>https://bit.ly/3AmIAFh</externallink>
+<thumbnail>https://iptvcrunch.com/wp-content/uploads/2022/05/cropped-logo-208x69.png</thumbnail>
+<fanart>https://i.imgur.com/mARBUac.jpeg</fanart>
+</item>
 ---------------------------------------------------------------------
 
 <item>
