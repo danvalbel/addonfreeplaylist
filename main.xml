@@ -52,6 +52,24 @@
   <page>https://www.partidos-de-hoy.com/futbol-resultados-hoy/</page> 
   </regex> 
 </item>
+
+------------------------------------------------------------------------------------
+
+<item> 
+<title>[COLOR cyan][B]Clasificación LaLiga EA Sports 2023/2024[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][makelist.param1]  [makelist.param3][/B]</title> 
+  <link>na</link> 
+  <thumbnail>https:[makelist.param2]</thumbnail> 
+  <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[(?s)class="pos">(.+?)<.+?src="(.+?)" alt="(.+?)"]]></expres> 
+  <page>https://resultados.elpais.com/deportivos/futbol/primera/clasificacion/</page> 
+  </regex> 
+</item>
   
 
 --------------------------------------------------------------------------------------
