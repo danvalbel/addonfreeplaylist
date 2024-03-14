@@ -70,7 +70,24 @@
   <page>https://resultados.elpais.com/deportivos/futbol/primera/clasificacion/</page> 
   </regex> 
 </item>
-  
+
+--------------------------------------------------------------------------------------
+
+<item> 
+<title>[COLOR cyan][B]Clasificaciones del Mundial de Fórmula 1 2024[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR lime][makelist.param1][/COLOR] [COLOR yellow][makelist.param2][/COLOR][COLOR blue][makelist.param3][/COLOR]  [COLOR pink][makelist.param4][/COLOR]  [COLOR orange][makelist.param5][/COLOR][/B]</title> 
+  <link>na</link> 
+  <thumbnail>https://i.imgur.com/mARBUac.jpeg</thumbnail> 
+  <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[<h1>(.+?)</h1>|<div id="(.+?)" class="bloque">|<span>(.+?)</span>\W.+\W<td class="(.+?)">(.*?)</td>]]></expres>
+  <page>https://resultados.elpais.com/deportivos/motor/formula-1/clasificacion/</page> 
+  </regex> 
+</item>
 
 --------------------------------------------------------------------------------------
 
