@@ -92,6 +92,24 @@
 --------------------------------------------------------------------------------------
 
 <item> 
+<title>[COLOR cyan][B]Resultados de la Liga Endesa ACB 2023/2024[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR orange][makelist.param1][/COLOR]   [COLOR yellow][makelist.param4][/COLOR]     [COLOR lime][makelist.param3][/COLOR][/B]</title> 
+  <link>na</link> 
+  <thumbnail>https:[makelist.param2]</thumbnail> 
+  <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[class="txt-al-r"><span.+?itemprop="name">.+?(\w.+?.+)\W.+?itemprop="image" src="(.+?)".+\W.+?resultado resul_post">(.+?)<.+\W.+?itemprop="name">.+?(\w.+?.+)]]></expres>
+  <page>https://resultados.elpais.com/deportivos/baloncesto/acb/jornada/</page> 
+  </regex> 
+</item>
+
+---------------------------------------------------------------------------------------
+
+<item> 
 <title>[COLOR cyan][B]Programacion TDT[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
