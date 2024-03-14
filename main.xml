@@ -61,12 +61,12 @@
   <regex> 
   <name>makelist</name> 
   <listrepeat><![CDATA[ 
-  <title>[B][makelist.param1]  [makelist.param3][/B]</title> 
+  <title>[B][makelist.param1]  [COLOR orange][makelist.param3][/COLOR]   [COLOR yellow][makelist.param4][/COLOR]  [COLOR lime][makelist.param5][/COLOR][/B]</title> 
   <link>na</link> 
   <thumbnail>https:[makelist.param2]</thumbnail> 
   <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
   ]]></listrepeat> 
-  <expres><![CDATA[(?s)class="pos">(.+?)<.+?src="(.+?)" alt="(.+?)"]]></expres> 
+  <expres><![CDATA[class="pos">(.+?)<.+?src="(.+?)" alt="(.+?)".+\W.+\W.+\W.+\W.+?"(total puntos)_total">(.+?)<]]></expres> 
   <page>https://resultados.elpais.com/deportivos/futbol/primera/clasificacion/</page> 
   </regex> 
 </item>
