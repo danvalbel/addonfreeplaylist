@@ -29,13 +29,14 @@
   <listrepeat><![CDATA[ 
   <title>[B][COLOR lime][makelist.param1][/COLOR] [COLOR white][makelist.param2][/COLOR] [COLOR red][makelist.param3] [makelist.param4][/COLOR] [COLOR skyblue][makelist.param5] [makelist.param6][/COLOR] [COLOR white][makelist.param7][/COLOR][/B]</title> 
   <link>na</link> 
-  <thumbnail>hhttps://i.imgur.com/xVOth0G.jpeg</thumbnail> 
+  <thumbnail>https://i.imgur.com/xVOth0G.jpeg</thumbnail> 
   <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
   ]]></listrepeat> 
   <expres><![CDATA[(?s)"item-principal --izq">.+?card">.+?lex-r"> <h4.+?title-mod">(.+?)<|col li-card--txt.+?text-sec.+?title=".+?">(.+?)<.+?row.+?class="(.+?) .+?data="(.+?)\|.+?class="(.+?) .+?data="(.+?)\|.+?alt="(.+?)"]]></expres> 
   <page>https://www.tiempo.com/</page>
   </regex>
-
+  <thumbnail>https://i.imgur.com/xVOth0G.jpeg</thumbnail> 
+  <fanart>https://i.imgur.com/mARBUac.jpeg</fanart> 
 </item>
 
 --------------------------------------------------------------------
