@@ -1,96 +1,34 @@
 <items>
 
 <item>
-<title>[COLOR white][B]Televall Basico[/B][/COLOR]</title>       
-<link>$doregex[makelist]</link>
-<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param3][/COLOR][/B]</title>
-<link>$doregex[play]</link>
-<thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
-<fanart></fanart>
-]]></listrepeat>
-<expres><![CDATA[(?s)<a href="(.+?.php)" .*?img src="(.+?)".*?text: '(.+?)']]></expres>
-<page>https://www.televall.online/basico.html</page>
-</regex>
-
-<regex>
-<name>play</name>
-<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
-<page>http://catv.televall.online/[makelist.param1]</page>
-</regex>
+<title>[COLOR yellow][B]troypoint.com[/B][/COLOR]</title>
+<link>na</link>
+<externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/1.xml</externallink>
+<thumbnail>https://pbs.twimg.com/profile_images/1357011084914249728/aTFs9i8f_200x200.jpg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 </item>
-------------------------------------------------------------
+
+  
+----------------------------------------------------------------------------------
+
+  
 <item>
-<title>[COLOR white][B]Televall Kids[/B][/COLOR]</title>       
+<title>[COLOR pink][B]Allaboutiptv.com[/B][/COLOR]</title>    
 <link>$doregex[makelist]</link>
-<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
+<thumbnail>https://s.alicdn.com/@sc04/kf/Hb721f4dd15dc408ba9a741eb4862d465G.png_300x300.jpg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param3][/COLOR][/B]</title>
-<link>$doregex[play]</link>
-<thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
-<fanart></fanart>
+<title>[B][COLOR white][makelist.param1][/COLOR][/B]</title>
+<link>na</link>
+<externallink>[makelist.param2]</externallink>
+<thumbnail>https://s.alicdn.com/@sc04/kf/Hb721f4dd15dc408ba9a741eb4862d465G.png_300x300.jpg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)<a href=\"https://www.televall.online/(.*?php).+?src=\"(.*?png).+?text: '(.*?)']]></expres>
-<page>https://www.televall.online/kids.html</page>
-</regex>
-
-<regex>
-<name>play</name>
-<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
-<page>http://catv.televall.online/[makelist.param1]</page>
+<expres><![CDATA[(?s)td>(\w.+?)<.+?<a href="(.+?)"]]></expres>
+<page>https://allaboutiptv.com/iptv-m3u-playlist-url/</page>
 </regex>
 </item>
-----------------------------------------------------------------
-<item>
-<title>[COLOR white][B]Televall Premium[/B][/COLOR]</title>       
-<link>$doregex[makelist]</link>
-<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param3][/COLOR][/B]</title>
-<link>$doregex[play]</link>
-<thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
-<fanart></fanart>
-]]></listrepeat>
-<expres><![CDATA[(?s)<a href=\"https://www.televall.online/(.*?php).+?src=\"(.*?png).+?text: '(.*?)']]></expres>
-<page>https://www.televall.online/premium.html</page>
-</regex>
-
-<regex>
-<name>play</name>
-<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
-<page>http://catv.televall.online/[makelist.param1]</page>
-</regex>
-</item>
----------------------------------------------------------------------
-
-<item>
-<title>[COLOR white][B]Televall Deportivos[/B][/COLOR]</title>       
-<link>$doregex[makelist]</link>
-<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param3][/COLOR][/B]</title>
-<link>$doregex[play]</link>
-<thumbnail>https://ligatv.televall.online/[makelist.param2]</thumbnail>
-<fanart></fanart>
-]]></listrepeat>
-<expres><![CDATA[(?s)<a href=\"https://ligatv.televall.online/(.*?php).+?src=\"(.*?png).+?text: '(.*?)']]></expres>
-<page>https://ligatv.televall.online/</page>
-</regex>
-
-<regex>
-<name>play</name>
-<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
-<page>http://cafut.televall.online/[makelist.param1]</page>
-</regex>
-</item>
-
+  
 </items>
