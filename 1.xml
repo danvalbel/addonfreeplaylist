@@ -1,173 +1,27 @@
 <items>
 
 <item>
-<title>[B]Iptv-org.github.io Playlist: All Channels[/B] </title>
+<title>[COLOR lime][B]Tdtchannels.com[/B][/COLOR] </title>
 <link>NA</link>  
-<externallink>https://iptv-org.github.io/iptv/index.m3u</externallink> 
+<externallink>https://www.tdtchannels.com/lists/tv.m3u</externallink> 
 <thumbnail>https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 </item>
 
 <item>
-<title>[B]IPTV-Org Playlist: English Speaking Channels[/B] </title>
+<title>[COLOR gold][B]Canales Tdt Iptvcrunch.com[/B][/COLOR]</title>
 <link>na</link>
-<externallink>https://iptv-org.github.io/iptv/languages/eng.m3u</externallink>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
+<externallink>https://iptv-org.github.io/iptv/countries/es.m3u</externallink>
+<thumbnail>https://iptvcrunch.com/wp-content/uploads/2022/05/cropped-logo-208x69.png</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 </item>
 
 <item>
-<title>[B]IPTV-Org Playlist: United States[/B] </title>
-<link>na</link>
-<externallink>https://iptv-org.github.io/iptv/countries/us.m3u</externallink>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]IPTV-Org Playlist: United Kingdom[/B] </title>
-<link>na</link>
-<externallink>https://iptv-org.github.io/iptv/countries/uk.m3u</externallink>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]IPTV-Org Playlist: Europe[/B] </title>
-<link>na</link>
-<externallink>https://iptv-org.github.io/iptv/regions/eur.m3u</externallink>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]IPTV-Org Playlist: North America[/B] </title>
-<link>na</link>
-<externallink>https://iptv-org.github.io/iptv/regions/noram.m3u</externallink>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]IPTV-Org Playlist: Latin America[/B] </title>
-<link>na</link>
-<externallink>https://iptv-org.github.io/iptv/regions/latam.m3u</externallink>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]Redbox[/B] </title>
-<link>na</link>
-<externallink>https://www.apsattv.com/redbox.m3u</externallink>
-<thumbnail>https://image.roku.com/developer_channels/prod/a921fe56ec5edf457318a6f347fe061db9d97330f41804e9b1749ac412a5dae7.png</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]Tubi TV [/B] </title>
-<link>na</link>
-<externallink>https://www.apsattv.com/tubi.m3u</externallink>
-<thumbnail>https://cdn.adrise.tv/tubitv-assets/img/tubi_open-graph-512x512.png</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]LocalNow[/B] </title>
-<link>na</link>
-<externallink>https://www.apsattv.com/localnow.m3u</externallink>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/LocalNow_logo_2020.png/800px-LocalNow_logo_2020.png</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]Tablo[/B] </title>
-<link>na</link>
-<externallink>https://www.apsattv.com/tablo.m3u</externallink>
-<thumbnail>https://www.tablotv.com/wp-content/uploads/2023/08/tablo_tcl_google_logo_screen.png</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]Xiaomi[/B] </title>
-<link>na</link>
-<externallink>https://www.apsattv.com/xiaomi.m3u</externallink>
-<thumbnail>https://i.imgur.com/301DN3m.png</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]Fire TV[/B] </title>
-<link>na</link>
-<externallink>https://www.apsattv.com/firetv.m3u</externallink>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Amazon_Fire_TV_logo_%28New%29.png/1200px-Amazon_Fire_TV_logo_%28New%29.png</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]Cineverse[/B] </title>
-<link>na</link>
-<externallink>https://www.apsattv.com/cineverse.m3u</externallink>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/8/84/Cineverse_logo.jpg</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]Distro[/B] </title>
-<link>na</link>
-<externallink>https://www.apsattv.com/distro.m3u</externallink>
-<thumbnail>https://archive.org/download/distro-tv-logo/DistroTV-logo.png</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]The Roku Channel[/B] </title>
-<link>na</link>
-<externallink>https://www.apsattv.com/rok.m3u</externallink>
-<thumbnail>https://upload.wikimedia.org/wikipedia/en/9/9e/Roku_Channel_Logo.png</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]Xumo[/B] </title>
-<link>na</link>
-<externallink>https://www.apsattv.com/xumo.m3u</externallink>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/XUMO-logo-2022.svg/1280px-XUMO-logo-2022.svg.png</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]LG Channels[/B] </title>
-<link>na</link>
-<externallink>https://www.apsattv.com/lg.m3u</externallink>
-<thumbnail>https://www.electricnow.tv/themes/custom/elec/electricnow/img/devices/LG-Channels.png</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]Vizio TV[/B] </title>
-<link>na</link>
-<externallink>https://www.apsattv.com/vizio.m3u</externallink>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/VIZIO_logo.svg/2560px-VIZIO_logo.svg.png</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-<item>
-<title>[B]Klowd TV[/B] </title>
-<link>na</link>
-<externallink>https://www.apsattv.com/klowd.m3u</externallink>
-<thumbnail>https://d35qfqdd1hb7yd.cloudfront.net/assets/images/logos/apps/transparent/padded/klowdtv.png</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
-</item>
-
-
-
-<item>
-<title>[B]Samsung TV Plus[/B] </title>
-<link>na</link>
-<externallink>https://i.mjh.nz/SamsungTVPlus/all.m3u8</externallink>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/2/28/Samsung_TV_Plus_logo.png</thumbnail>
-<fanart>http://bwwfrw.jpg</fanart>
+<title>[COLOR pink][B]Radio- Tdtchannels.com[/B][/COLOR]</title>
+<link>NA</link>  
+<externallink>https://www.tdtchannels.com/lists/radio.m3u</externallink> 
+<thumbnail>https://i.imgur.com/bsAa4MV.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 </item>
 
 </items>
