@@ -1,148 +1,79 @@
 <items>
 
 <item>
-<title>[COLOR white][B]Iteleflix Esp[/B][/COLOR]</title>       
+<title>[COLOR yellow][B]Televall.online Basico[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
-<thumbnail>https://iteleflix.com/archivos/logo-iteleflix.png</thumbnail>
-<fanart>https://i.imgur.com/BuL1hDr.jpeg</fanart>
+<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param2][/COLOR][/B]</title>
+<title>[B][COLOR white][makelist.param3][/COLOR][/B]</title>
 <link>$doregex[play]</link>
-<thumbnail>[makelist.param3]</thumbnail>
-<fanart>https://i.imgur.com/BuL1hDr.jpeg</fanart>
+<thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)ifield"><a href="(.+?)".+?alt="(.+?)".+?cvpsrc="(.+?)"]]></expres>
-<page>https://iteleflix.com/</page>
+<expres><![CDATA[(?s)<a href="(.+?.php)" .*?img src="(.+?)".*?text: '(.+?)']]></expres>
+<page>https://www.televall.online/basico.html</page>
 </regex>
 <regex>
 <name>play</name>
-<expres><![CDATA[(?s)loadSource\('(.*?)']]></expres>
-<page>[makelist.param1]</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent> 
-<referer>https://iteleflix.com</referer> 
+<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
+<page>http://catv.televall.online/[makelist.param1]</page>
 </regex>
 </item>
 
-------------------------------------------------------------------
+  
+---------------------------------------------
 
+  
 <item>
-<title>[COLOR white][B]Iteleflix Noticias[/B][/COLOR]</title>       
+<title>[COLOR blue][B]Televall.online Kids[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
-<thumbnail>https://iteleflix.com/archivos/logo-iteleflix.png</thumbnail>
-<fanart>https://i.imgur.com/BuL1hDr.jpeg</fanart>
+<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param2][/COLOR][/B]</title>
+<title>[B][COLOR white][makelist.param3][/COLOR][/B]</title>
 <link>$doregex[play]</link>
-<thumbnail>[makelist.param3]</thumbnail>
-<fanart>https://i.imgur.com/BuL1hDr.jpeg</fanart>
+<thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)ifield"><a href="(.+?)".+?alt="(.+?)".+?cvpsrc="(.+?)"]]></expres>
-<page>https://iteleflix.com/genero/noticias/</page>
+<expres><![CDATA[(?s)<a href=\"https://www.televall.online/(.*?php).+?src=\"(.*?png).+?text: '(.*?)']]></expres>
+<page>https://www.televall.online/kids.html</page>
 </regex>
 <regex>
 <name>play</name>
-<expres><![CDATA[(?s)loadSource\('(.*?)']]></expres>
-<page>[makelist.param1]</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent> 
-<referer>https://iteleflix.com</referer> 
+<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
+<page>http://catv.televall.online/[makelist.param1]</page>
 </regex>
 </item>
 
----------------------------------------------------------------------
+  
+--------------------------------------------------------------------
 
+  
 <item>
-<title>[COLOR white][B]Iteleflix deportes[/B][/COLOR]</title>       
+<title>[COLOR green][B]Televall.online Premium[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
-<thumbnail>https://iteleflix.com/archivos/logo-iteleflix.png</thumbnail>
-<fanart>https://i.imgur.com/BuL1hDr.jpeg</fanart>
+<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param2][/COLOR][/B]</title>
+<title>[B][COLOR white][makelist.param3][/COLOR][/B]</title>
 <link>$doregex[play]</link>
-<thumbnail>[makelist.param3]</thumbnail>
-<fanart>https://i.imgur.com/BuL1hDr.jpeg</fanart>
+<thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 ]]></listrepeat>
-<expres><![CDATA[(?s)ifield"><a href="(.+?)".+?alt="(.+?)".+?cvpsrc="(.+?)"]]></expres>
-<page>https://iteleflix.com/genero/deportes/</page>
+<expres><![CDATA[(?s)<a href=\"https://www.televall.online/(.*?php).+?src=\"(.*?png).+?text: '(.*?)']]></expres>
+<page>https://www.televall.online/premium.html</page>
 </regex>
 <regex>
 <name>play</name>
-<expres><![CDATA[(?s)loadSource\('(.*?)']]></expres>
-<page>[makelist.param1]</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent> 
-<referer>https://iteleflix.com</referer> 
-</regex>
-</item>
-
-----------------------------------------------------------------------------
-
-<item>
-<title>[COLOR white][B]Iteleflix Infantil[/B][/COLOR]</title>       
-<link>$doregex[makelist]</link>
-<thumbnail>https://iteleflix.com/archivos/logo-iteleflix.png</thumbnail>
-<fanart>https://i.imgur.com/BuL1hDr.jpeg</fanart>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param2][/COLOR][/B]</title>
-<link>$doregex[play]</link>
-<thumbnail>[makelist.param3]</thumbnail>
-<fanart>https://i.imgur.com/BuL1hDr.jpeg</fanart>
-]]></listrepeat>
-<expres><![CDATA[(?s)ifield"><a href="(.+?)".+?alt="(.+?)".+?cvpsrc="(.+?)"]]></expres>
-<page>https://iteleflix.com/genero/infantil/</page>
-</regex>
-<regex>
-<name>play</name>
-<expres><![CDATA[(?s)loadSource\('(.*?)']]></expres>
-<page>[makelist.param1]</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent> 
-<referer>https://iteleflix.com</referer> 
-</regex>
-</item>
-
------------------------------------------------------------------
-
-<item>
-<title>[COLOR white][B]Iteleflix Paises[/B][/COLOR]</title>       
-<link>$doregex[makelist]</link>
-<thumbnail>https://iteleflix.com/archivos/logo-iteleflix.png</thumbnail>
-<fanart>https://i.imgur.com/BuL1hDr.jpeg</fanart>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param2][/COLOR][/B]</title>
-<link>$doregex[canales]</link>
-<thumbnail>https://iteleflix.com/archivos/logo-iteleflix.png</thumbnail>
-<fanart>https://i.imgur.com/BuL1hDr.jpeg</fanart>
-]]></listrepeat>
-<expres><![CDATA[(?s)<a href="(.*?)".+?<h3 class="pt-cv-title">(.*?)<]]></expres>
-<page>https://iteleflix.com/paises/</page>
-</regex>
-
-<regex>
-<name>canales</name>
-<listrepeat><![CDATA[
-<title>[B][COLOR white][canales.param2][/COLOR][/B]</title>
-<link>$doregex[play]</link>
-<thumbnail>[canales.param3]</thumbnail>
-<fanart>https://i.imgur.com/BuL1hDr.jpeg</fanart>
-]]></listrepeat>
-<expres><![CDATA[(?s)ifield"><a href="(.+?)".+?alt="(.+?)".+?cvpsrc="(.+?)"]]></expres>
-<page>[makelist.param1]</page>
-</regex>
-
-<regex>
-<name>play</name>
-<expres><![CDATA[(?s)loadSource\('(.*?)']]></expres>
-<page>[canales.param1]</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent> 
-<referer>https://iteleflix.com</referer> 
+<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
+<page>http://catv.televall.online/[makelist.param1]</page>
 </regex>
 </item>
 
