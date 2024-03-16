@@ -31,8 +31,8 @@
   <expres><![CDATA[(?s)<h1 class="QueSeCelebraHoy.+?title="(.+?)hoy">(.+?)<|col3.+?class="bqDestacadoV">.+?title="(.+?)".+?img src="(.+?)"]]></expres> 
   <page>https://www.diainternacionalde.com/</page> 
   </regex>
-  <thumbnail>hhttps://i.imgur.com/xVOth0G.jpeg</thumbnail> 
-  <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart> 
+ <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 </item>
 
 ---------------------------------------------------------------------------------
@@ -162,6 +162,8 @@
   <expres><![CDATA[(?s)<td>(.+?)</td>\W.+?class="ind">.+?;(.+?)<]]></expres> 
   <page>[makelist.param1]</page> 
   </regex> 
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 </item>
 
 
