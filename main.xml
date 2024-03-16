@@ -10,7 +10,7 @@
 
 
 <item> 
-<title>[COLOR cyan][B]Que se celebra hoy...[/B][/COLOR]</title>        
+<title>[COLOR lime]IBK[/COLOR][COLOR white][B]Que se celebra hoy...[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -30,7 +30,7 @@
 ---------------------------------------------------------------------------------
 
 <item> 
-<title>[COLOR cyan][B]El tiempo en las principales ciudades[/B][/COLOR]</title>        
+<title>[COLOR lime]IBK[/COLOR][COLOR white][B]El tiempo en las principales ciudades[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -50,7 +50,7 @@
 --------------------------------------------------------------------
   
 <item> 
-<title>[COLOR cyan][B]Últimos resultados de Futbol[/B][/COLOR]</title>        
+<title>[COLOR lime]IBK[/COLOR][COLOR white][B]Últimos resultados de Futbol[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -70,7 +70,7 @@
 ------------------------------------------------------------------------------------
 
 <item> 
-<title>[COLOR cyan][B]Clasificación LaLiga EA Sports 2023/2024[/B][/COLOR]</title>        
+<title>[COLOR lime]IBK[/COLOR][COLOR white][B]Clasificación LaLiga EA Sports 2023/2024[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -90,7 +90,7 @@
 --------------------------------------------------------------------------------------
 
 <item> 
-<title>[COLOR cyan][B]Clasificaciones del Mundial de Fórmula 1 2024[/B][/COLOR]</title>        
+<title>[COLOR lime]IBK[/COLOR][COLOR white][B]Clasificaciones del Mundial de Fórmula 1 2024[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -110,7 +110,7 @@
 --------------------------------------------------------------------------------------
 
 <item> 
-<title>[COLOR cyan][B]Resultados de la Liga Endesa ACB 2023/2024[/B][/COLOR]</title>        
+<title>[COLOR lime]IBK[/COLOR][COLOR white][B]Resultados de la Liga Endesa ACB 2023/2024[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -130,7 +130,7 @@
 ---------------------------------------------------------------------------------------
 
 <item> 
-<title>[COLOR cyan][B]Programacion TDT[/B][/COLOR]</title>        
+<title>[COLOR lime]IBK[/COLOR][COLOR white][B]Programacion TDT[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -159,165 +159,33 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   
 <item>
-<title>[B]+++++++++Canales TDT y Radio España++++++++++[/B]</title>
-<link>na</link>
-<externallink>https://raw.githubusercontent.com/</externallink>
-<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-</item>
-
-<item>
-<title>[COLOR lime][B]Tdtchannels.com[/B][/COLOR] </title>
-<link>NA</link>  
-<externallink>https://www.tdtchannels.com/lists/tv.m3u</externallink> 
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-</item>
-
-<item>
-<title>[COLOR gold][B]Canales Tdt Iptvcrunch.com[/B][/COLOR]</title>
-<link>na</link>
-<externallink>https://iptv-org.github.io/iptv/countries/es.m3u</externallink>
-<thumbnail>https://iptvcrunch.com/wp-content/uploads/2022/05/cropped-logo-208x69.png</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-</item>
-  
-<item>
-<title>[COLOR pink][B]Radio- Tdtchannels.com[/B][/COLOR]</title>
-<link>NA</link>  
-<externallink>https://www.tdtchannels.com/lists/radio.m3u</externallink> 
-<thumbnail>https://i.imgur.com/bsAa4MV.jpeg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-</item>
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  
-<item>
-<title>[B]+++++++++Canales Latino-Americanos++++++++++[/B]</title>
-<link>na</link>
-<externallink>https://raw.githubusercontent.com/</externallink>
-<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-</item>
-
-<item>
-<title>[COLOR yellow][B]Televall.online Basico[/B][/COLOR]</title>       
-<link>$doregex[makelist]</link>
-<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param3][/COLOR][/B]</title>
-<link>$doregex[play]</link>
-<thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-]]></listrepeat>
-<expres><![CDATA[(?s)<a href="(.+?.php)" .*?img src="(.+?)".*?text: '(.+?)']]></expres>
-<page>https://www.televall.online/basico.html</page>
-</regex>
-<regex>
-<name>play</name>
-<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
-<page>http://catv.televall.online/[makelist.param1]</page>
-</regex>
-</item>
-
-  
----------------------------------------------
-
-  
-<item>
-<title>[COLOR blue][B]Televall.online Kids[/B][/COLOR]</title>       
-<link>$doregex[makelist]</link>
-<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param3][/COLOR][/B]</title>
-<link>$doregex[play]</link>
-<thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-]]></listrepeat>
-<expres><![CDATA[(?s)<a href=\"https://www.televall.online/(.*?php).+?src=\"(.*?png).+?text: '(.*?)']]></expres>
-<page>https://www.televall.online/kids.html</page>
-</regex>
-<regex>
-<name>play</name>
-<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
-<page>http://catv.televall.online/[makelist.param1]</page>
-</regex>
-</item>
-
-  
---------------------------------------------------------------------
-
-  
-<item>
-<title>[COLOR green][B]Televall.online Premium[/B][/COLOR]</title>       
-<link>$doregex[makelist]</link>
-<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param3][/COLOR][/B]</title>
-<link>$doregex[play]</link>
-<thumbnail>https://www.televall.online/[makelist.param2]</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-]]></listrepeat>
-<expres><![CDATA[(?s)<a href=\"https://www.televall.online/(.*?php).+?src=\"(.*?png).+?text: '(.*?)']]></expres>
-<page>https://www.televall.online/premium.html</page>
-</regex>
-<regex>
-<name>play</name>
-<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
-<page>http://catv.televall.online/[makelist.param1]</page>
-</regex>
-</item>
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  
-<item>
-<title>[B]+++++++++Canales Internacionales++++++++++[/B]</title>
-<link>na</link>
-<externallink>https://raw.githubusercontent.com/</externallink>
-<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-</item>
-  
-<item>
-<title>[COLOR yellow][B]troypoint.com[/B][/COLOR]</title>
+<title>[COLOR lime]IBK  [/COLOR][COLOR white][B]+ Canales TDT y Radio España[/B][/COLOR]</title>
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/1.xml</externallink>
-<thumbnail>https://pbs.twimg.com/profile_images/1357011084914249728/aTFs9i8f_200x200.jpg</thumbnail>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 </item>
 
-  
-----------------------------------------------------------------------------------
-
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   
 <item>
-<title>[COLOR pink][B]Allaboutiptv.com[/B][/COLOR]</title>    
-<link>$doregex[makelist]</link>
-<thumbnail>https://s.alicdn.com/@sc04/kf/Hb721f4dd15dc408ba9a741eb4862d465G.png_300x300.jpg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param1][/COLOR][/B]</title>
+<title>[COLOR lime]IBK[/COLOR][COLOR white]B]+ Canales Latino-Americanos[/B][/COLOR]</title>
 <link>na</link>
-<externallink>[makelist.param2]</externallink>
-<thumbnail>https://s.alicdn.com/@sc04/kf/Hb721f4dd15dc408ba9a741eb4862d465G.png_300x300.jpg</thumbnail>
+<externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/2.xml</externallink>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-]]></listrepeat>
-<expres><![CDATA[(?s)td>(\w.+?)<.+?<a href="(.+?)"]]></expres>
-<page>https://allaboutiptv.com/iptv-m3u-playlist-url/</page>
-</regex>
 </item>
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  
+<item>
+<title>[COLOR lime]IBK[/COLOR][COLOR white][B]+ Canales Internacionales[/B][/COLOR]</title>
+<link>na</link>
+<externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/3.xml</externallink>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+</item>
+  
   
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -325,72 +193,14 @@
 
   
 <item>
-<title>[B]+++++++++Canales Deportivos++++++++++[/B]</title>
+<title>[COLOR lime]IBK[/COLOR][COLOR white][B]+ Canales Deportivos[/B][/COLOR]</title>
 <link>na</link>
-<externallink>https://raw.githubusercontent.com/</externallink>
+<externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/4.xml</externallink>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 </item>
 
 
-  
-<item> 
-<title>[COLOR cyan][B]Agenda deportiva Televall.online[/B][/COLOR]</title>        
-<link>$doregex[makelist]</link> 
-  <regex> 
-  <name>makelist</name> 
-  <listrepeat><![CDATA[ 
-  <title>[COLOR lime][makelist.param1][/COLOR] [COLOR orange][makelist.param2][/COLOR][COLOR skyblue][makelist.param3][/COLOR]  [COLOR yellow][makelist.param4][/COLOR][B][COLOR lime][makelist.param5][/COLOR][/B]</title> 
-  <link>$doregex[play]</link> 
-  <thumbnail>https://ligatv.televall.online/[makelist.param7]</thumbnail> 
-  <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-  ]]></listrepeat> 
-  <expres><![CDATA[(?s)class="fs12lh1-5">.+?(Partidos de.+?)<|<div><b><span class="fs12lh1-5">(.+?)<|class="t">(\d\d:\d\d)<.+?fs11lh1-5 cf2">(.+?)<|x5engine.utils.location\('(.+?)(.php)'.+?src="(.+?)"]]></expres> 
-  <page>https://ligatv.televall.online/</page> 
-  </regex> 
-<regex>
-<name>play</name>
-<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
-<page>http://cafut.televall.online/[makelist.param5][makelist.param6]</page>
-</regex>
-<thumbnail>https://ligatv.televall.online/images/ligatv2.jpg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-</item>
-
---------------------------------------------------------------------
-
-<item>
-<title>[COLOR pink][B]Televall Deportivos[/B][/COLOR]</title>       
-<link>$doregex[makelist]</link>
-<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[B][COLOR white][makelist.param3][/COLOR][/B]</title>
-<link>$doregex[play]</link>
-<thumbnail>https://ligatv.televall.online/[makelist.param2]</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-]]></listrepeat>
-<expres><![CDATA[(?s)<a href=\"https://ligatv.televall.online/(.*?php).+?src=\"(.*?png).+?text: '(.*?)']]></expres>
-<page>https://ligatv.televall.online/</page>
-</regex>
-<regex>
-<name>play</name>
-<expres><![CDATA[(?s)Clappr.Player.*\W.*?source: '(.*?)']]></expres>
-<page>http://cafut.televall.online/[makelist.param1]</page>
-</regex>
-</item>
-
--------------------------------------------------------------
-
-<item>
-<title>[B]Canales Deportivos Iptvcrunch.com[/B]</title>
-<link>na</link>
-<externallink>https://bit.ly/3AmIAFh</externallink>
-<thumbnail>https://iptvcrunch.com/wp-content/uploads/2022/05/cropped-logo-208x69.png</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-</item>
 ---------------------------------------------------------------------
 
 <item>
@@ -402,7 +212,7 @@
 </item>
 
 <item>
-<title>[B]Seccion Pruebas[/B]</title>
+<title>[COLOR lime]IBK[/COLOR][COLOR white][B]Seccion Pruebas[/B][/COLOR]</title>
 <link>na</link>
 <externallink>https://pastebin.com/raw/jG1V0maN</externallink>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
