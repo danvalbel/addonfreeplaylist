@@ -9,6 +9,14 @@
 </item>
 
 
+<item>
+<title>[B] ***** APARTADO INFORMATIVO ****** [/B]</title>
+<link>na</link>
+<externallink>https://raw.githubusercontent.com/</externallink>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+</item>
+
 <item> 
 <title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR] [COLOR white]Que se celebra hoy...[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
@@ -30,7 +38,7 @@
 ---------------------------------------------------------------------------------
 
 <item> 
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR] El tiempo en las principales ciudades[/B][/COLOR]</title>        
+<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] El tiempo en las principales ciudades[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -50,7 +58,7 @@
 --------------------------------------------------------------------
   
 <item> 
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR] Últimos resultados de Futbol[/B][/COLOR]</title>        
+<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Últimos resultados de Futbol[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -70,7 +78,7 @@
 ------------------------------------------------------------------------------------
 
 <item> 
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR] Clasificación LaLiga EA Sports 2023/2024[/B][/COLOR]</title>        
+<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR] [COLOR white]Clasificación LaLiga EA Sports 2023/2024[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -90,7 +98,7 @@
 --------------------------------------------------------------------------------------
 
 <item> 
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR] Clasificaciones del Mundial de Fórmula 1 2024[/B][/COLOR]</title>        
+<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Clasificaciones del Mundial de Fórmula 1 2024[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -110,7 +118,7 @@
 --------------------------------------------------------------------------------------
 
 <item> 
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR] Resultados de la Liga Endesa ACB 2023/2024[/B][/COLOR]</title>        
+<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Resultados de la Liga Endesa ACB 2023/2024[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -130,7 +138,7 @@
 ---------------------------------------------------------------------------------------
 
 <item> 
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR] Programacion TDT[/B][/COLOR]</title>        
+<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Programacion TDT[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -155,11 +163,21 @@
   <page>[makelist.param1]</page> 
   </regex> 
 </item>
+
+
+
+<item>
+<title>[B] ***** CANALES DE TELEVISION ****** [/B]</title>
+<link>na</link>
+<externallink>https://raw.githubusercontent.com/</externallink>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+</item>
   
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   
 <item>
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR] Canales TDT y Radio España[/B][/COLOR]</title>
+<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Canales TDT y Radio España[/B][/COLOR]</title>
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/1.xml</externallink>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
@@ -169,7 +187,7 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   
 <item>
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR] Canales Latino-Americanos[/B][/COLOR]</title>
+<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Canales Latino-Americanos[/B][/COLOR]</title>
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/2.xml</externallink>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
@@ -179,7 +197,7 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   
 <item>
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR] Canales Internacionales[/B][/COLOR]</title>
+<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Canales Internacionales[/B][/COLOR]</title>
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/3.xml</externallink>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
@@ -193,7 +211,7 @@
 
   
 <item>
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR] Canales Deportivos[/B][/COLOR]</title>
+<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Canales Deportivos[/B][/COLOR]</title>
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/4.xml</externallink>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
