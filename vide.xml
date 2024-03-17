@@ -2,10 +2,23 @@
 
 
 <item>
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white][B]  Lanzamientos del 2024 para Switch[/B][/COLOR]</title>       
+<title>[COLOR white][B]Lanzamientos destacados del 2024[/B][/COLOR]</title>       
+<link>$doregex[selec]</link>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+<regex>
+ 
+<name>selec</name>
+<listrepeat><![CDATA[
+<title>[selec.param2]</title>
 <link>$doregex[makelist]</link>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+]]></listrepeat>
+<expres><![CDATA[numero.+?(\d\d).+?pag (.+?)g]]></expres>
+<page>g numero 83 pag nintendo-switch g numero 13 pag pc g numero 89 pag playstation-5 g numero 73 pag playstation-4 g numero 79 pag xbox-one g</page>
+</regex>
+ 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -15,7 +28,7 @@
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[t11"><b>(.+?)<\/b>.+?href="(.+?)".+?<strong>(.+?)<\/strong>.+?mt05"><p><b>(.+?)<\/b>(.+?)<\/p>]]></expres>
-<page>https://vandal.elespanol.com/lanzamientos/83/nintendo-switch/13/2024</page>
+<page>https://vandal.elespanol.com/lanzamientos/[selec.param1]/[selec.param2]</page>
 </regex>
  
 <regex>
@@ -30,9 +43,9 @@
 <page>[makelist.param2]</page>
 </regex>
 </item>
-
+-----------------------------------------------------------------
 <item>
-<title>[COLOR white][B]vandal radio[/B][/COLOR]</title>       
+<title>[COLOR white][B]vandal radio[/B][/COLOR][COLOR white]  Ivoox[/COLOR]</title>       
 <link>$doregex[makelist]</link>
 <thumbnail>https://static-2.ivoox.com/canales/5/3/2/3/601549993235_XXL.jpg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart> 
@@ -46,6 +59,24 @@
 ]]></listrepeat>
 <expres><![CDATA[<a data-tracking-click=""\W.+?href="(.+?rf.+?(.+?\d).html)"\W.+?title="(.+?)">\W.+?width="77px]]></expres>
 <page>https://www.ivoox.com/podcast-vandal-radio_sq_f1107764_1.html</page>
+</regex>
+</item>
+ --------------------------------------------------------------------
+ <item>
+<title>[COLOR white][B]Viciados Podcast[/B][/COLOR][COLOR white]  Ivoox[/COLOR]</title>       
+<link>$doregex[makelist]</link>
+<thumbnail>https://static-1.ivoox.com/canales/8/9/8/5/8241614145898_XXL.jpg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart> 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>https://www.ivoox.com/listen_mn_[makelist.param2].mp3</link>
+<thumbnail>https://static-1.ivoox.com/canales/8/9/8/5/8241614145898_XXL.jpg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+]]></listrepeat>
+<expres><![CDATA[<a data-tracking-click=""\W.+?href="(.+?rf.+?(.+?\d).html)"\W.+?title="(.+?)">\W.+?width="77px]]></expres>
+<page>https://www.ivoox.com/podcast-viciados-podcast-videojuegos-para-todos_sq_f128159_1.html</page>
 </regex>
 </item>
 
