@@ -7,7 +7,6 @@
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 <regex>
- 
 <name>selec</name>
 <listrepeat><![CDATA[
 <title>$pyFunction:('[selec.param2]').replace('-',' ').replace('p','P')</title>
@@ -18,7 +17,6 @@
 <expres><![CDATA[numero.+?(\d\d).+?pag (.+?)g]]></expres>
 <page>g numero 83 pag nintendo-switch g numero 13 pag pc g numero 89 pag playstation-5 g numero 73 pag playstation-4 g numero 79 pag xbox-one g</page>
 </regex>
- 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -30,7 +28,6 @@
 <expres><![CDATA[t11"><b>(.+?)<\/b>.+?href="(.+?)".+?<strong>(.+?)<\/strong>.+?mt05"><p><b>(.+?)<\/b>(.+?)<\/p>]]></expres>
 <page>https://vandal.elespanol.com/lanzamientos/[selec.param1]/[selec.param2]</page>
 </regex>
- 
 <regex>
 <name>makelist1</name>
 <listrepeat><![CDATA[
@@ -43,7 +40,56 @@
 <page>[makelist.param2]</page>
 </regex>
 </item>
+ 
+---------------------------------------------------------------------
+
+ <item>
+<title>[COLOR white][B]Lanzamientos del 2024 + videos[/B][/COLOR]</title>       
+<link>$doregex[selec]</link>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+<regex>
+<name>selec</name>
+<listrepeat><![CDATA[
+<title>$pyFunction:('[selec.param2]').replace('-',' ').replace('p','P')</title>
+<link>$doregex[juegos]</link>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+]]></listrepeat>
+<expres><![CDATA[numero.+?(\d\d).+?pag (.+?)g]]></expres>
+<page>g numero 83 pag nintendo-switch g numero 13 pag pc g numero 89 pag playstation-5 g numero 73 pag playstation-4 g numero 79 pag xbox-one g</page>
+</regex>
+<regex>
+<name>juegos</name>
+<listrepeat><![CDATA[
+<title>[COLOR orange][juegos.param1][/COLOR]  [juegos.param2]</title>
+<link>$doregex[searchyoulist]</link>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="t08">.+?href=".+?"/>(.+?)</td>.+?itemprop="name">(.+?)<]]></expres>
+<page>https://vandal.elespanol.com/lanzamientos/[selec.param1]/[selec.param2]</page>
+</regex>
+<regex> 
+<name>limpiar_enlace</name> 
+<expres>$pyFunction:('[juegos.param2]').replace(' ','+')</expres> 
+<page></page> 
+</regex> 
+<regex>
+<name>searchyoulist</name>
+<listrepeat><![CDATA[
+<title>[searchyoulist.param3]</title>
+<urlsolve>https://www.youtube.com/watch?v=[searchyoulist.param1]</urlsolve>
+<thumbnail>[searchyoulist.param2]</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+]]></listrepeat>
+<expres><![CDATA[videoRenderer":{"videoId":"(.+?)".+?thumbnails.+?url":"(.+?.jpg).+?text":"(.+?)"]]></expres>
+<page>https://www.youtube.com/results?search_query=$doregex[limpiar_enlace]+[selec.param2]</page>
+</regex>
+</item>
+ 
 -----------------------------------------------------------------
+ 
 <item>
 <title>[COLOR white][B]vandal radio[/B][/COLOR][COLOR white]  Ivoox[/COLOR]</title>       
 <link>$doregex[makelist]</link>
