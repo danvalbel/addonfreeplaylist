@@ -167,17 +167,17 @@
 </item>
 
 <item>
-<title>[COLOR white][B]Lanzamientos más populares de 2024 para Switch[/B][/COLOR]</title>       
+<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white][B]  Lanzamientos del 2024 para Switch[/B][/COLOR]</title>       
 <link>$doregex[makelist]</link>
-<thumbnail>https://www.televall.online/images/televall_3.jpg</thumbnail>
-<fanart>https://www.televall.online/images/televall_3.jpg</fanart>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param1]  [makelist.param3]  [makelist.param4]  [makelist.param5]</title>
+<title>[COLOR orange][makelist.param1][/COLOR]  [makelist.param3]  [COLOR lime][makelist.param4][/COLOR]  [makelist.param5]</title>
 <link>$doregex[makelist1]</link>
-<thumbnail>[makelist1.param5]</thumbnail>
-<fanart>https://www.televall.online/images/televall_3.jpg</fanart>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[t11"><b>(.+?)<\/b>.+?href="(.+?)".+?<strong>(.+?)<\/strong>.+?mt05"><p><b>(.+?)<\/b>(.+?)<\/p>]]></expres>
 <page>https://vandal.elespanol.com/lanzamientos/83/nintendo-switch/13/2024</page>
@@ -189,7 +189,7 @@
 <title>[COLOR lime][B][makelist1.param1]  [makelist1.param2][/B][/COLOR] [makelist1.param3]</title>
 <link>$doregex[enlace]</link>
 <thumbnail>[makelist1.param4]</thumbnail>
-<fanart>https://www.televall.online/images/televall_3.jpg</fanart>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[class="(metacritic_nota).+?subnota">(.+?)<|id="(imagen)noticia.+?data-src="(.+?)"|id="imagennoticia1" data-grande="(.+?)"]]></expres>
 <page>[makelist.param2]</page>
