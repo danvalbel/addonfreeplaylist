@@ -79,5 +79,24 @@
 <page>https://www.ivoox.com/podcast-viciados-podcast-videojuegos-para-todos_sq_f128159_1.html</page>
 </regex>
 </item>
+ --------------------------------------------------------------------
+ <item>
+<title>[COLOR white][B]Sin Pelos en los Bits [/B][/COLOR][COLOR white]  Ivoox[/COLOR]</title>       
+<link>$doregex[makelist]</link>
+<thumbnail>https://static-2.ivoox.com/canales/5/c/2/9/5c29837cc2b4a9ed1f8bb6ad40c9f35a_XXL.jpg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart> 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>https://www.ivoox.com/listen_mn_[makelist.param2].mp3</link>
+<thumbnail>https://static-2.ivoox.com/canales/5/c/2/9/5c29837cc2b4a9ed1f8bb6ad40c9f35a_XXL.jpg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+]]></listrepeat>
+<expres><![CDATA[<a data-tracking-click=""\W.+?href="(.+?rf.+?(.+?\d).html)"\W.+?title="(.+?)">\W.+?width="77px]]></expres>
+<page>https://www.ivoox.com/podcast-sin-pelos-bits_sq_f1488871_1.html</page>
+</regex>
+</item>
+
 
 </items>
