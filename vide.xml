@@ -10,7 +10,7 @@
  
 <name>selec</name>
 <listrepeat><![CDATA[
-<title>$pyFunction:('[selec.param2]').replace('-',' ')</title>
+<title>$pyFunction:('[selec.param2]').replace('-',' ').replace('n','N').replace('s','S').replace('p','P').replace('x','X')</title>
 <link>$doregex[makelist]</link>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
