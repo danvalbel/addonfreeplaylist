@@ -77,4 +77,38 @@
 </regex>
 </item>
 
+------------------------------------------------------------------------------
+
+<item>
+<title>[COLOR white][B]spinoff.link VPN[/B][/COLOR]</title>       
+<link>$doregex[listas]</link>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+
+<regex>
+<name>listas</name>
+<listrepeat><![CDATA[
+<title>[listas.param1]</title>
+<link>$doregex[m3u]</link>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+]]></listrepeat>
+<expres><![CDATA[id="foo".+? value="(.+?(lista.+?).m3u)"]]></expres>
+<page>https://spinoff.link/listas-premium/</page>
+</regex>
+
+<regex>
+<name>m3u</name>
+<listrepeat><![CDATA[
+<title>[m3u.param1]</title>
+<link>[m3u.param2]</link>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+]]></listrepeat>
+<expres><![CDATA[EXTINF:-1.+?,(.+?.+\W)(http://.+)]]></expres>
+<page>[listas.param1]</page>
+</regex>
+</item>
+
+
 </items>
