@@ -74,6 +74,45 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 </item>
 
+---------------------------------------------------------------------------------
+
+<item>
+<title>[B][COLOR white] MUSICA ONLINE foxdisco.info [/B][/COLOR]</title>
+<link>$doregex[canales]</link>
+<regex>
+<name>canales</name>
+<listrepeat><![CDATA[         
+<title>[canales.param2]</title>
+<link>$doregex[titulos]</link>
+<thumbnail>[canales.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="(.+?)".title="(.+?)"]]></expres>
+<page>https://pastebin.com/raw/Ngs4wyfz</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent> 
+</regex>
+<regex>
+<name>titulos</name>
+<listrepeat><![CDATA[         
+<title>[titulos.param2]</title>
+<link>$doregex[canciones]</link>
+<thumbnail>[canales.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<li> <a href="(.+?)".+?alt.+?title="(.+?)"]]></expres>
+<page>https://www.foxdisco.info[canales.param1]</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent> 
+</regex>
+<regex>
+<name>canciones</name>
+<listrepeat><![CDATA[         
+<title>[canciones.param2]</title>
+<link>[canciones.param1]</link>
+<thumbnail>[canales.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<span data-src='(.+?)'.+?title='.+?'>(.+?)<b>]]></expres>
+<page>https://www.foxdisco.info[titulos.param1]</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent> 
+</regex>
+</item>
 
 ----------------------------------------------------------------------------------
 
