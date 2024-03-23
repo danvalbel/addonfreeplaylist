@@ -21,7 +21,7 @@
 ---------------------------------------------------------------------------------
 
 <item> 
-<title>][B][COLOR white] El tiempo en las principales ciudades[/B][/COLOR]</title>        
+<title>[B][COLOR white] El tiempo en las principales ciudades[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
