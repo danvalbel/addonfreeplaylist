@@ -17,14 +17,62 @@
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 </item>
 
-<item>
-<title>[B][COLOR white]  VideoJuegos[/B][/COLOR]</title>
-<link>na</link>
-<externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/vide.xml</externallink>
-<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-</item>
+---------------------------------------------------------------------------------
 
+<item>
+<title>[B][COLOR white] IVOOX PODCAST [/B][/COLOR]</title>
+<link>$doregex[canales]</link>
+<regex>
+<name>canales</name>
+<listrepeat><![CDATA[         
+<title>[canales.param2]</title>
+<link>$doregex[ircanal]</link>
+<thumbnail>[canales.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<div class="header-modulo">\W.+?href="(.+?)".+?title="(.+?)">\W.+?src=".+?url=(.+?)"]]></expres>
+<page>https://www.ivoox.com/$doregex[search]_sw_2_1.html</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent> 
+<referer>https://www.ivoox.com/</referer> 
+</regex>
+<regex>
+<name>ircanal</name>
+<listrepeat><![CDATA[         
+<title>[ircanal.param1]</title>
+<link>$doregex[episodios]</link>
+<thumbnail>[canales.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<meta itemprop="name" content="(.+?)"/>\W.+\W.+\W.+?url" content="(.+?)"]]></expres>
+<page>[canales.param1]</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent> 
+<referer>https://www.ivoox.com/</referer> 
+</regex>
+<regex>
+<name>episodios</name>
+<listrepeat><![CDATA[
+<title>[episodios.param3]</title>
+<link>https://www.ivoox.com/listen_mn_[episodios.param2].mp3</link>
+<thumbnail>[canales.param3]</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+]]></listrepeat>
+<expres><![CDATA[<a data-tracking-click=""\W.+?href="(.+?rf.+?(.+?\d).html)"\W.+?title="(.+?)">\W.+?width="77px]]></expres>
+<page>[ircanal.param2]</page>
+</regex>
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Introducir Nombre del Podcast', type=xbmcgui.INPUT_ALPHANUM)
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+</item>
 
 
 ----------------------------------------------------------------------------------
