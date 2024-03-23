@@ -38,6 +38,41 @@
   <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart> 
 </item>
 
+.....................................................................
+
+<item>
+<title>[B][COLOR white]Titulares de Prensa[/B][/COLOR]</title>
+<link>$doregex[titulares]</link>
+<regex>
+<name>titulares</name>
+<listrepeat><![CDATA[         
+<title>[titulares.param2] </title>
+<link>$doregex[prensa]</link>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+]]></listrepeat>
+<expres><![CDATA[<li class="list_item" data-ng-href="(.+?)".+?title="(.+?)"]]></expres>
+<page>https://www.rtve.es/television/teletexto/prensa/185/</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent> 
+<referer>https://www.rtve.es/</referer> 
+</regex>
+<regex>
+<name>prensa</name>
+<listrepeat><![CDATA[         
+<title>[prensa.param2] </title>
+<link>nunguno</link>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+]]></listrepeat>
+<expres><![CDATA[<p class="">(.+?)<\/p> ]]></expres>
+<page>https://www.rtve.es[titulares.param1]</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent> 
+<referer>https://www.rtve.es/</referer> 
+</regex>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+</item>
+
 --------------------------------------------------------------------
   
 <item> 
