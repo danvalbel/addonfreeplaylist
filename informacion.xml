@@ -133,6 +133,28 @@
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart> 
 </item>
 
+---------------------------------------------------------------------------
+
+<item>
+<title>[B][COLOR white]Tenis[/B][/COLOR]</title>
+<link>$doregex[titulares]</link>
+<regex>
+<name>titulares</name>
+<listrepeat><![CDATA[         
+<title>[titulares.param1] [titulares.param2] [titulares.param3] [titulares.param4]</title>
+<link>$doregex[prensa]</link>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+]]></listrepeat>
+<expres><![CDATA[<span itemprop="title" class="pretitle">(.+?)<|class="maintitle">(.+?)<|<p>(\d\d-\d\d-\d\d\d\d)|<td>(.+?)</td]]></expres>
+<page>https://www.rtve.es/television/teletexto/deportes/240/</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent> 
+<referer>https://www.rtve.es/</referer> 
+</regex>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+</item>
+
 --------------------------------------------------------------------------------------
 
 <item> 
