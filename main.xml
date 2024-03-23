@@ -18,7 +18,7 @@
 </item>
 
 <item> 
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR] [COLOR white]Que se celebra hoy...[/B][/COLOR]</title>        
+<title> [B][COLOR white]Que se celebra hoy...[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -38,7 +38,7 @@
 ---------------------------------------------------------------------------------
 
 <item> 
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] El tiempo en las principales ciudades[/B][/COLOR]</title>        
+<title>][B][COLOR white] El tiempo en las principales ciudades[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -58,7 +58,7 @@
 --------------------------------------------------------------------
   
 <item> 
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Últimos resultados de Futbol[/B][/COLOR]</title>        
+<title>[B][COLOR white] Últimos resultados de Futbol[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -78,7 +78,7 @@
 ------------------------------------------------------------------------------------
 
 <item> 
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR] [COLOR white]Clasificación LaLiga EA Sports 2023/2024[/B][/COLOR]</title>        
+<title>[B][COLOR white]Clasificación LaLiga EA Sports 2023/2024[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -98,7 +98,7 @@
 --------------------------------------------------------------------------------------
 
 <item> 
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Clasificaciones del Mundial de Fórmula 1 2024[/B][/COLOR]</title>        
+<title>[B][COLOR white] Clasificaciones del Mundial de Fórmula 1 2024[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -118,7 +118,7 @@
 --------------------------------------------------------------------------------------
 
 <item> 
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Resultados de la Liga Endesa ACB 2023/2024[/B][/COLOR]</title>        
+<title>[B][COLOR white] Resultados de la Liga Endesa ACB 2023/2024[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -138,7 +138,7 @@
 ---------------------------------------------------------------------------------------
 
 <item> 
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Programacion TDT[/B][/COLOR]</title>        
+<title>[B][COLOR white] Programacion TDT[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -168,7 +168,7 @@
 --------------------------------------------------------------------------------
 
 <item>
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white]  VideoJuegos[/B][/COLOR]</title>
+<title>[B][COLOR white]  VideoJuegos[/B][/COLOR]</title>
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/vide.xml</externallink>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
@@ -191,7 +191,7 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   
 <item>
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Canales TDT y Radio España[/B][/COLOR]</title>
+<title>[B][COLOR white] Canales TDT y Radio España[/B][/COLOR]</title>
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/1.xml</externallink>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
@@ -201,7 +201,7 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   
 <item>
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Canales Latino-Americanos[/B][/COLOR]</title>
+<title>[B][COLOR white] Canales Latino-Americanos[/B][/COLOR]</title>
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/2.xml</externallink>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
@@ -211,7 +211,7 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   
 <item>
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Canales Internacionales[/B][/COLOR]</title>
+<title>[B][COLOR white] Canales Internacionales[/B][/COLOR]</title>
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/3.xml</externallink>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
@@ -225,7 +225,7 @@
 
   
 <item>
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Canales Deportivos[/B][/COLOR]</title>
+<title>[B][COLOR white] Canales Deportivos[/B][/COLOR]</title>
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/4.xml</externallink>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
@@ -233,7 +233,7 @@
 </item>
 
   <item>
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR][COLOR white] Busqueda de canales Tonkiang.us [/B][/COLOR]</title>
+<title>[B][COLOR white] Busqueda de canales Tonkiang.us [/B][/COLOR]</title>
 <link>$doregex[canales]</link>
 
 <regex>
@@ -279,7 +279,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR orange]I[/COLOR][COLOR pink]B[/COLOR][COLOR yellow]K  [/COLOR][COLOR lime][B]+[/COLOR]Seccion Pruebas[/B]</title>
+<title>[B][/COLOR]Seccion Pruebas[/B]</title>
 <link>na</link>
 <externallink>https://pastebin.com/raw/jG1V0maN</externallink>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
