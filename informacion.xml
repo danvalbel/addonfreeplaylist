@@ -1,0 +1,152 @@
+<items> 
+
+<item> 
+<title> [B][COLOR white]Que se celebra hoy...[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR lime][makelist.param1][makelist.param2][/COLOR] [COLOR skyblue][makelist.param3][/COLOR][/B]</title> 
+  <link>na</link> 
+  <thumbnail>https://www.diainternacionalde.com[makelist.param4]</thumbnail> 
+  <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[(?s)<h1 class="QueSeCelebraHoy.+?title="(.+?)hoy">(.+?)<|col3.+?class="bqDestacadoV">.+?title="(.+?)".+?img src="(.+?)"]]></expres> 
+  <page>https://www.diainternacionalde.com/</page> 
+  </regex>
+ <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+</item>
+
+---------------------------------------------------------------------------------
+
+<item> 
+<title>][B][COLOR white] El tiempo en las principales ciudades[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR lime][makelist.param1][/COLOR] [COLOR white][makelist.param2][/COLOR] [COLOR red][makelist.param3] [makelist.param4][/COLOR] [COLOR skyblue][makelist.param5] [makelist.param6][/COLOR] [COLOR white][makelist.param7][/COLOR][/B]</title> 
+  <link>na</link> 
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+  ]]></listrepeat> 
+  <expres><![CDATA[(?s)"item-principal --izq">.+?card">.+?lex-r"> <h4.+?title-mod">(.+?)<|col li-card--txt.+?text-sec.+?title=".+?">(.+?)<.+?row.+?class="(.+?) .+?data="(.+?)\|.+?class="(.+?) .+?data="(.+?)\|.+?alt="(.+?)"]]></expres> 
+  <page>https://www.tiempo.com/</page>
+  </regex>
+  <thumbnail>https://i.imgur.com/xVOth0G.jpeg</thumbnail> 
+  <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart> 
+</item>
+
+--------------------------------------------------------------------
+  
+<item> 
+<title>[B][COLOR white] Últimos resultados de Futbol[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR yellow][makelist.param1][/COLOR] [COLOR lime][makelist.param2][/COLOR] [COLOR orange][makelist.param3][/COLOR]  [COLOR iris][makelist.param4][/B][/COLOR]</title> 
+  <link>na</link> 
+  <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail> 
+  <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[(?s)<h3>(Últimos resultados.+?)</h3>|<li>(.+?)<span>(.+?)</span> <span>(.+?)</span>]]></expres> 
+  <page>https://www.partidos-de-hoy.com/futbol-resultados-hoy/</page> 
+  </regex>
+  <thumbnail>https://i.imgur.com/wIxqlE4.jpeg</thumbnail> 
+  <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart> 
+</item>
+
+------------------------------------------------------------------------------------
+
+<item> 
+<title>[B][COLOR white]Clasificación LaLiga EA Sports 2023/2024[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][makelist.param1]  [COLOR orange][makelist.param3][/COLOR]   [COLOR yellow][makelist.param4][/COLOR]  [COLOR lime][makelist.param5][/COLOR][/B]</title> 
+  <link>na</link> 
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+  ]]></listrepeat> 
+  <expres><![CDATA[class="pos">(.+?)<.+?src="(.+?)" alt="(.+?)".+\W.+\W.+\W.+\W.+?"(total puntos)_total">(.+?)<]]></expres> 
+  <page>https://resultados.elpais.com/deportivos/futbol/primera/clasificacion/</page> 
+  </regex> 
+<thumbnail>https://i.imgur.com/49dfKw5.jpeg</thumbnail> 
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart> 
+</item>
+
+--------------------------------------------------------------------------------------
+
+<item> 
+<title>[B][COLOR white] Clasificaciones del Mundial de Fórmula 1 2024[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR lime][makelist.param1][/COLOR] [COLOR yellow][makelist.param2][/COLOR][COLOR blue][makelist.param3][/COLOR]  [COLOR pink][makelist.param4][/COLOR]  [COLOR orange][makelist.param5][/COLOR][/B]</title> 
+  <link>na</link> 
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+  ]]></listrepeat> 
+  <expres><![CDATA[<h1>(.+?)</h1>|<div id="(.+?)" class="bloque">|<span>(.+?)</span>\W.+\W<td class="(.+?)">(.*?)</td>]]></expres>
+  <page>https://resultados.elpais.com/deportivos/motor/formula-1/clasificacion/</page> 
+  </regex> 
+<thumbnail>https://i.imgur.com/OgRh5YT.jpeg</thumbnail> 
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart> 
+</item>
+
+--------------------------------------------------------------------------------------
+
+<item> 
+<title>[B][COLOR white] Resultados de la Liga Endesa ACB 2023/2024[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR orange][makelist.param1][/COLOR]   [COLOR yellow][makelist.param4][/COLOR]     [COLOR lime][makelist.param3][/COLOR][/B]</title> 
+  <link>na</link> 
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+  ]]></listrepeat> 
+  <expres><![CDATA[class="txt-al-r"><span.+?itemprop="name">.+?(\w.+?.+)\W.+?itemprop="image" src="(.+?)".+\W.+?resultado resul_post">(.+?)<.+\W.+?itemprop="name">.+?(\w.+?.+)]]></expres>
+  <page>https://resultados.elpais.com/deportivos/baloncesto/acb/jornada/</page> 
+  </regex>
+<thumbnail>https://i.imgur.com/kfs1QcO.jpeg</thumbnail> 
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart> 
+</item>
+
+---------------------------------------------------------------------------------------
+
+<item> 
+<title>[B][COLOR white] Programacion TDT[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR white][makelist.param2][/B][/COLOR]</title> 
+  <link>$doregex[makelist1]</link> 
+  <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail> 
+  <fanart>https://i.imgur.com/b7hSWTR.jpegg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[(?s)<a href="(http.+?.html)">(.+?)<]]></expres> 
+  <page>https://www.programacion-tdt.com/</page> 
+  </regex> 
+  <regex> 
+  <name>makelist1</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR white][makelist1.param1] - [makelist1.param2][/B][/COLOR]</title> 
+  <link>na</link> 
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[(?s)<td>(.+?)</td>\W.+?class="ind">.+?;(.+?)<]]></expres> 
+  <page>[makelist.param1]</page> 
+  </regex> 
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+</item>
+
+</items>
