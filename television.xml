@@ -77,4 +77,24 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 </item>
 
+----------------------------------------------------------
+
+<item>
+<title>[COLOR white]Clubtv.link: Usar VPN[/COLOR]</title>
+<link>a</link>
+<externallink>$doregex[clubtv]</externallink>
+<regex>
+<name>clubtv</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige la lista: ', ['[COLOR white][B]lista 1[/B][/COLOR]','[COLOR white]lista 2[/COLOR]','[COLOR white]lista 3[/COLOR]','[COLOR white]lista 4[/COLOR]','[COLOR white]lista 5[/COLOR]','[COLOR white]lista 6[/COLOR]','[COLOR white]lista 7[/COLOR]','[COLOR white]lista 8[/COLOR]','[COLOR white]lista 9[/COLOR]','[COLOR white]lista 10[/COLOR]','[COLOR white]lista Tdt Latinos[/COLOR]'])
+   lists = ['http://clubtv.link/Mp2003/android.m3u','http://clubtv.link/Mp2003/android1.m3u','http://clubtv.link/Mp2003/android2.m3u','http://clubtv.link/Mp2003/android3.m3u','http://clubtv.link/Mp2003/android4.m3u','http://clubtv.link/Mp2003/android5.m3u','http://clubtv.link/Mp2003/android6.m3u','http://clubtv.link/Mp2003/android7.m3u','http://clubtv.link/Mp2003/android8.m3u','http://clubtv.link/Mp2003/android9.m3u','http://clubtv.link/Mp2003/android10.m3u','https://m3u.cl/lista/total.m3u']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+</item>
+
 </items>
