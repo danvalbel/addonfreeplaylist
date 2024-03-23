@@ -117,6 +117,40 @@
 <thumbnail>https://i.imgur.com/kfs1QcO.jpeg</thumbnail> 
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart> 
 </item>
+--------------------------------------------------------------------------------------
+
+<item>
+<title>[B][COLOR white]Resultados de la Primitiva[/B][/COLOR]</title>
+<link>$doregex[primitiva]</link>
+<regex>
+<name>primitiva</name>
+<listrepeat><![CDATA[         
+<title>[primitiva.param2]</title>
+<link>$doregex[resultados]</link>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+]]></listrepeat>
+<expres><![CDATA[<a href='(.+?)'>(.+?)<\/a>]]></expres>
+<page>https://www.laprimitiva.info/</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent> 
+<referer>https://www.laprimitiva.info/</referer> 
+</regex>
+<regex>
+<name>resultados</name>
+<listrepeat><![CDATA[         
+<title>[resultados.param1] numero: [resultados.param2]  [resultados.param3]  [resultados.param4]</title>
+<link>ninguno</link>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+]]></listrepeat>
+<expres><![CDATA[<p class="ajustetit">(.+?)<|<div class="num">(\d.*?)<|<div class="num">(El Joker).+?"joker">(.+?)<]]></expres>
+<page>https://www.laprimitiva.info[primitiva.param1]</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent> 
+<referer>https://www.laprimitiva.info/</referer> 
+</regex>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+</item>
 
 ---------------------------------------------------------------------------------------
 
