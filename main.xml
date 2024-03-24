@@ -125,7 +125,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ----------------------------------------------------------------------------------
 
 <item> 
-<title>[COLOR white][B]Peliculas[/B][/COLOR]</title>        
+<title>[COLOR white][B] PELICULAS[/B][/COLOR]</title>        
 <link>$doregex[paginacion]</link> 
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
