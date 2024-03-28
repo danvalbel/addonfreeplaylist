@@ -1,8 +1,121 @@
 <items>
 
+<item>
+<title>[B][COLOR white] Series Populares[/B][/COLOR]</title>
+<link>$doregex[paginacion]</link>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+ 
+<regex>
+<name>paginacion</name>
+<listrepeat><![CDATA[
+  <title>[B][COLOR white]Pagina [paginacion.param1][/COLOR][/B]</title>
+  <link>$doregex[makelist1]</link>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+]]></listrepeat>
+<expres>(.*?),</expres>
+<page>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,</page>
+</regex>
+ 
+<regex> 
+  <name>makelist1</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR white][makelist1.param2][/COLOR][/B]</title> 
+  <link>$doregex[makelist2]</link> 
+  <thumbnail>https://www17.pelisplushd.to[makelist1.param3]</thumbnail> 
+  <fanart>https://www17.pelisplushd.to[makelist1.param3]</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[<a href="(/anime/.+?)".+?title="VER (.+?)Online.+?src="(.+?)"]]></expres> 
+  <page>https://www17.pelisplushd.to/animes/populares?page=[paginacion.param1]</page> 
+  </regex> 
+<regex> 
+  <name>makelist2</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR white][makelist2.param2][/COLOR][/B]</title> 
+  <link>$doregex[makelist3]</link> 
+  <thumbnail>https://www17.pelisplushd.to[makelist1.param3]</thumbnail> 
+  <fanart>https://www17.pelisplushd.to[makelist1.param3]</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[a href="(/.+?(temporada/\d.+?capitulo/.+?))"]]></expres> 
+  <page>https://www17.pelisplushd.to/[makelist1.param1]</page> 
+  </regex> 
+ <regex> 
+  <name>makelist3</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR white]Opcion: [makelist3.param1][/COLOR][/B]</title> 
+  <urlsolve>[makelist3.param2]</urlsolve>
+  <thumbnail>https://www17.pelisplushd.to[makelist1.param3]</thumbnail> 
+  <fanart>https://www17.pelisplushd.to[makelist1.param3]</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[<span lid="(.+?)".+?url="(.+?)"]]></expres> 
+  <page>https://www17.pelisplushd.to[makelist2.param1]</page> 
+  </regex> 
+</item> 
+
+
+
+------------------------------------------------------------------------
+
+
+
+<item> 
+<title>[COLOR white][B] Ultimos Estrenos[/B][/COLOR]</title>        
+<link>$doregex[paginacion]</link> 
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+<regex>
+<name>paginacion</name>
+<listrepeat><![CDATA[
+  <title>[B][COLOR white]Pagina [paginacion.param1][/COLOR][/B]</title>
+  <link>$doregex[makelist1]</link>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+]]></listrepeat>
+<expres>(.*?),</expres>
+<page>1,2,3,</page>
+</regex>
+<regex> 
+  <name>makelist1</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR white][makelist1.param2][/COLOR][/B]</title> 
+  <link>$doregex[makelist2]</link> 
+  <thumbnail>https://www17.pelisplushd.to[makelist1.param3]</thumbnail> 
+  <fanart>https://www17.pelisplushd.to[makelist1.param3]</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[<a href="(/anime/.+?)".+?title="VER (.+?)Online.+?src="(.+?)"]]></expres> 
+  <page>https://www17.pelisplushd.to/animes/estrenos?page=[paginacion.param1]</page> 
+  </regex> 
+<regex> 
+  <name>makelist2</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR white][makelist2.param2][/COLOR][/B]</title> 
+  <link>$doregex[makelist3]</link> 
+  <thumbnail>https://www17.pelisplushd.to[makelist1.param3]</thumbnail> 
+  <fanart>https://www17.pelisplushd.to[makelist1.param3]</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[a href="(/.+?(temporada/\d.+?capitulo/.+?))"]]></expres> 
+  <page>https://www17.pelisplushd.to/[makelist1.param1]</page> 
+  </regex> 
+ <regex> 
+  <name>makelist3</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR white]Opcion: [makelist3.param1][/COLOR][/B]</title> 
+  <urlsolve>[makelist3.param2]</urlsolve>
+  <thumbnail>https://www17.pelisplushd.to[makelist1.param3]</thumbnail> 
+  <fanart>https://www17.pelisplushd.to[makelist1.param3]</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[<span lid="(.+?)".+?url="(.+?)"]]></expres> 
+  <page>https://www17.pelisplushd.to[makelist2.param1]</page> 
+  </regex> 
+</item> 
+
+
+--------------------------------------------------------------------
+
 
 <item>
-<title>[B][COLOR white] Series Anime Pagiada[/B][/COLOR]</title>
+<title>[B][COLOR white] Todos los Animes[/B][/COLOR]</title>
 <link>$doregex[paginacion]</link>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
@@ -55,8 +168,11 @@
 </item> 
 
 
+------------------------------------------------------------------------
+
+
 <item> 
-<title>[COLOR white][B] Series Anime Por Generos[/B][/COLOR]</title>        
+<title>[COLOR white][B] Por Generos[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
