@@ -1,6 +1,50 @@
 <items> 
 
 <item> 
+<title>[COLOR white][B] Pelismaraton Por Generos[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+ <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR white][makelist.param1][makelist.param3][/COLOR][/B]</title> 
+  <link>$doregex[makelist1]</link> 
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+  ]]></listrepeat> 
+  <expres><![CDATA[(.*?),]]></expres> 
+  <page>accion,animacion,aventura,comedia,familia,fantasia,drama,ciencia-ficcion,suspense,terror,biografia,cirmen,romantico,comedia-dramatica,judicial,historico,artes-marciales,espionaje,musical,western,guerra,comedia-musical,experimental,erotico,deporte,</page> 
+  </regex> 
+<regex> 
+  <name>makelist1</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR white][makelist1.param1][/COLOR][/B]</title> 
+  <link>$doregex[makelist2]</link> 
+  <thumbnail>https://pelismaraton.watch[makelist1.param3]</thumbnail> 
+  <fanart>https://pelismaraton.watch[makelist1.param3]</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[ull-front">\W.+?<a title="(.+?)".+?href="(.+?)".\W.+\W.+\W.+?src="(.+?)"]]></expres> 
+  <page>https://pelismaraton.watch/[makelist.param1]/</page> 
+  </regex> 
+    <regex> 
+  <name>makelist2</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B][COLOR white][makelist2.param1] [makelist2.param2] [makelist2.param5][/COLOR][/B]</title> 
+  <urlsolve>https:[makelist2.param3]</urlsolve>
+  <thumbnail>https://pelismaraton.watch[makelist1.param3]</thumbnail> 
+  <fanart>https://pelismaraton.watch[makelist1.param3]</fanart> 
+  ]]></listrepeat> 
+  <expres><![CDATA[<button class="bstd Button"> <span>(.+?)<span>(.+?)</span>|data-url="(.+?)".+?<span>(.+?)<span>(.+?)</span>]]></expres> 
+  <page>[makelist1.param2]</page> 
+  </regex> 
+</item>
+
+
+---------------------------------------------------------------------------------
+
+
+<item> 
 <title>[COLOR white][B] Pelismaraton Por años[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
