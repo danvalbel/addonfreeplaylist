@@ -180,5 +180,6 @@
   <expres><![CDATA[ <div class="shortf-img">\W.+?href="(.+?)".title="(.+?)".+\W.+?src="(.+?)"]]></expres> 
   <page>https://verpeliculasultra.com[makelist.param1]page/[paginacion.param1]</page> 
   </regex> 
+</item>
 
 </items>
