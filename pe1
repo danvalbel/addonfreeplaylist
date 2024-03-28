@@ -19,10 +19,10 @@
  <regex> 
   <name>makelist1</name> 
   <listrepeat><![CDATA[ 
-  <title>[B][COLOR white][makelist.param1][/COLOR][/B]</title> 
+  <title>[B][COLOR white][makelist1.param1][/COLOR][/B]</title> 
   <link>$doregex[makelist2]</link> 
-  <thumbnail>https://pelismaraton.watch[makelist.param3]</thumbnail> 
-  <fanart>https://pelismaraton.watch[makelist.param3]</fanart> 
+  <thumbnail>https://pelismaraton.watch[makelist1.param3]</thumbnail> 
+  <fanart>https://pelismaraton.watch[makelist1.param3]</fanart> 
   ]]></listrepeat> 
   <expres><![CDATA[ull-front">\W.+?<a title="(.+?)".+?href="(.+?)".\W.+\W.+\W.+?src="(.+?)"]]></expres> 
   <page>https://pelismaraton.watch[makelist.param2]/</page> 
@@ -30,10 +30,10 @@
     <regex> 
   <name>makelist2</name> 
   <listrepeat><![CDATA[ 
-  <title>[B][COLOR white][makelist1.param1] [makelist1.param2] [makelist1.param5][/COLOR][/B]</title> 
-  <urlsolve>https:[makelist1.param3]</urlsolve>
-  <thumbnail>https://pelismaraton.watch[makelist.param3]</thumbnail> 
-  <fanart>https://pelismaraton.watch[makelist.param3]</fanart> 
+  <title>[B][COLOR white][makelist2.param1] [makelist2.param2] [makelist2.param5][/COLOR][/B]</title> 
+  <urlsolve>https:[makelist2.param3]</urlsolve>
+  <thumbnail>https://pelismaraton.watch[makelist1.param3]</thumbnail> 
+  <fanart>https://pelismaraton.watch[makelist1.param3]</fanart> 
   ]]></listrepeat> 
   <expres><![CDATA[<button class="bstd Button"> <span>(.+?)<span>(.+?)</span>|data-url="(.+?)".+?<span>(.+?)<span>(.+?)</span>]]></expres> 
   <page>[makelist1.param2]</page> 
