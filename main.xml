@@ -145,7 +145,18 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 </item>
+
+    
+---------------------------------------------------------------------------------------
  
+
+<item>
+<title>[B] TODO DRAGON BALL [/B]</title>
+<link>na</link>
+<externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/DRAGON%20BALL</externallink>
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+</item>
     
 ---------------------------------------------------------------------------------------
 
