@@ -142,44 +142,5 @@
 
 -------------------------------------------------------------------------
 
-<item> 
-<title>[COLOR white][B] Verpeliculasultra Por Generos[/B][/COLOR]</title>        
-<link>$doregex[makelist]</link> 
-<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
- <regex> 
-  <name>makelist</name> 
-  <listrepeat><![CDATA[ 
-  <title>[B][COLOR white][makelist.param2][/COLOR][/B]</title> 
-  <link>$doregex[paginacion]</link> 
-<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-  ]]></listrepeat> 
-  <expres><![CDATA["(.+?)".+?<span>(.+?)<,]]></expres> 
-  <page>"/accion/"><span>Acción<,"/animacion/">,"/drama/"><span>Drama<,"/aventura/"><span>Aventura<,"/ciencia-ficcion/"><span>Ciencia Ficción<,"/comedia/"><span>Comedia<,</page> 
-  </regex>
-<regex>
-<name>paginacion</name>
-<listrepeat><![CDATA[
-  <title>[B][COLOR white]Pagina [paginacion.param1][/COLOR][/B]</title>
-  <link>$doregex[makelist1]</link>
-<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-]]></listrepeat>
-<expres>(.*?),</expres>
-<page>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,</page>
-</regex>
-<regex> 
-  <name>makelist1</name> 
-  <listrepeat><![CDATA[ 
-  <title>[B][COLOR white][makelist1.param2][/COLOR][/B]</title> 
-  <link>$doregex[makelist1]</link> 
-  <thumbnail>https://verpeliculasultra.com[makelist.param3]</thumbnail> 
-  <fanart>https://verpeliculasultra.com[makelist.param3]</fanart> 
-  ]]></listrepeat> 
-  <expres><![CDATA[ <div class="shortf-img">\W.+?href="(.+?)".title="(.+?)".+\W.+?src="(.+?)"]]></expres> 
-  <page>https://verpeliculasultra.com[makelist.param1]page/[paginacion.param1]</page> 
-  </regex> 
-</item>
 
 </items>
