@@ -8,7 +8,7 @@
  <regex> 
   <name>makelist</name> 
   <listrepeat><![CDATA[ 
-  <title>[B][COLOR white][makelist.param1][makelist.param3][/COLOR][/B]</title> 
+  <title>[B][COLOR white][makelist.param1][/COLOR][/B]</title> 
   <link>$doregex[makelist1]</link> 
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
