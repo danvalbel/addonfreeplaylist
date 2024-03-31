@@ -173,7 +173,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ----------------------------------------------------------------------------------------
 
 <item>
-<title>[COLOR white][B] BUSCAR CANALES CON ACESTREAM[/B][/COLOR]</title>
+<title>[COLOR white][B] BUSCAR CON ACESTREAM (acestreamsearch.net)[/B][/COLOR]</title>
 <link>$doregex[makelist]</link>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
