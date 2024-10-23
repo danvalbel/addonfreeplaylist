@@ -127,86 +127,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 ----------------------------------------------------------------------------------
 
-<item>
-<title>[B] PELICULAS [/B]</title>
-<link>na</link>
-<externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/pe1</externallink>
-<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-</item>
-
---------------------------------------------------------------------------------------
-
-    
-<item>
-<title>[B] SERIES ANIME [/B]</title>
-<link>na</link>
-<externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/anime</externallink>
-<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-</item>
-
-    
----------------------------------------------------------------------------------------
- 
-
-<item>
-<title>[B] TODO DRAGON BALL [/B]</title>
-<link>na</link>
-<externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/DRAGON%20BALL</externallink>
-<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-</item>
-    
----------------------------------------------------------------------------------------
-
-
-<item>
-<title>[B] CANALES DE TELEVISION [/B]</title>
-<link>na</link>
-<externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/television.xml</externallink>
-<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-</item>
-    
-
-----------------------------------------------------------------------------------------
-
-<item>
-<title>[COLOR white][B] BUSCAR CON ACESTREAM (acestreamsearch.net)[/B][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
- 
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[         
-<title>[makelist.param2]</title>
-<link>plugin://script.module.horus/?action=play&amp;id=[makelist.param1]&amp;title=[makelist.param2]</link>
-<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
-]]></listrepeat>
-<expres><![CDATA[<li class=.+?item">.+?//(.+?)">(.+?)<]]></expres>
-<page>https://acestreamsearch.net/en/?q=$doregex[search]</page>
-<referer>https://acestreamsearch.com/en/</referer>
-</regex>
- 
-<regex>
-<name>search</name>
-<expres><![CDATA[#$pyFunction
-import xbmc
-import xbmcaddon
-import xbmcgui
-def GetLSProData(page_data,Cookie_Jar,m):
-    dialog = xbmcgui.Dialog()
-    d = dialog.input('Buscar  Nombre del Canal', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
-    return d
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-</item>
-
 
 
 <item>
@@ -220,7 +140,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[B]Seccion Pruebas[/B]</title>
 <link>na</link>
-<externallink>https://pastebin.com/raw/jG1V0maN</externallink>
+<externallink>https://</externallink>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 </item>
