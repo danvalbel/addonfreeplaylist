@@ -96,17 +96,17 @@
 ------------------------------------------------------------------------------------
 
 <item> 
-<title>[B][COLOR white]Clasificación LaLiga EA Sports 2023/2024[/B][/COLOR]</title>        
+<title>[B][COLOR white]Clasificación LaLiga EA Sports 2024/2025[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
   <listrepeat><![CDATA[ 
-  <title>[B][makelist.param1]  [COLOR orange][makelist.param3][/COLOR]   [COLOR yellow][makelist.param4][/COLOR]  [COLOR lime][makelist.param5][/COLOR][/B]</title> 
+  <title>[B] Posicion [makelist.param1]  [COLOR orange][makelist.param2][/COLOR]  Puntos: [COLOR yellow][makelist.param3][/COLOR][/B]</title> 
   <link>na</link> 
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
   ]]></listrepeat> 
-  <expres><![CDATA[class="pos">(.+?)<.+?src="(.+?)" alt="(.+?)".+\W.+\W.+\W.+\W.+?"(total puntos)_total">(.+?)<]]></expres> 
+  <expres><![CDATA[class="pos">(.+?)<.+\W.+\W.+?<span>(.+?)<.+\W.+\W.+\W.+">(.+?)<]]></expres> 
   <page>https://resultados.elpais.com/deportivos/futbol/primera/clasificacion/</page> 
   </regex> 
 <thumbnail>https://i.imgur.com/49dfKw5.jpeg</thumbnail> 
