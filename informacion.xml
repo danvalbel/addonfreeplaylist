@@ -31,7 +31,7 @@
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
   ]]></listrepeat> 
-  <expres><![CDATA[(?s)"item-principal --izq">.+?card">.+?lex-r"> <h4.+?title-mod">(.+?)<|col li-card--txt.+?text-sec.+?title=".+?">(.+?)<.+?row.+?class="(.+?) .+?data="(.+?)\|.+?class="(.+?) .+?data="(.+?)\|.+?alt="(.+?)"]]></expres> 
+  <expres><![CDATA[(?s)class="text-sec">(.+?)<.+?data="(.+?)\|.+?data="(.+?)\|]]></expres> 
   <page>https://www.tiempo.com/</page>
   </regex>
   <thumbnail>https://i.imgur.com/xVOth0G.jpeg</thumbnail> 
