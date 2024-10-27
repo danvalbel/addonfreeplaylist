@@ -96,7 +96,7 @@
 ------------------------------------------------------------------------------------
 
 <item> 
-<title>[B][COLOR white]Clasificación LaLiga EA Sports 2024/2025[/B][/COLOR]</title>        
+<title>[B][COLOR white]Clasificación LaLiga Futbol[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -116,7 +116,7 @@
 --------------------------------------------------------------------------------------
 
 <item> 
-<title>[B][COLOR white] Clasificaciones del Mundial de Fórmula 1 2024[/B][/COLOR]</title>        
+<title>[B][COLOR white] Clasificaciones del Mundial de Fórmula 1[/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
@@ -158,7 +158,7 @@
 --------------------------------------------------------------------------------------
 
 <item> 
-<title>[B][COLOR white] Resultados de la Liga Endesa ACB 2023/2024[/B][/COLOR]</title>        
+<title>[B][COLOR white] Resultados de la Liga ACB [/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
