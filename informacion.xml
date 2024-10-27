@@ -26,12 +26,12 @@
   <regex> 
   <name>makelist</name> 
   <listrepeat><![CDATA[ 
-  <title>[B][COLOR lime][makelist.param1][/COLOR] [COLOR white][makelist.param2][/COLOR] [COLOR red][makelist.param3] [makelist.param4][/COLOR] [COLOR skyblue][makelist.param5] [makelist.param6][/COLOR] [COLOR white][makelist.param7][/COLOR][/B]</title> 
+  <title>[B][COLOR lime][makelist.param1][/COLOR]  -  [COLOR white][makelist.param2][/COLOR] [COLOR red][makelist.param3] [makelist.param4][/COLOR] [COLOR skyblue][makelist.param5] [makelist.param6][/COLOR] [COLOR white][makelist.param7][/COLOR][/B]</title> 
   <link>na</link> 
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
   ]]></listrepeat> 
-  <expres><![CDATA[(?s)class="text-sec">(.+?)<.+?data="(.+?)\|.+?data="(.+?)\|]]></expres> 
+  <expres><![CDATA[(?s)class="text-sec">(.+?)<.+?data="(.+?)\|.+?data="(.+?)\|.+?alt="(.+?)"]]></expres> 
   <page>https://www.tiempo.com/</page>
   </regex>
   <thumbnail>https://i.imgur.com/xVOth0G.jpeg</thumbnail> 
