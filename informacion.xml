@@ -93,6 +93,23 @@
 <fanart>https://www.teletexto.com/[makelist.param3]</fanart> 
 </item>
 
+<item> 
+<title>[B][COLOR white]Clasificación LaLiga Futbol[/B][/COLOR]</title>        
+<link>$doregex[makelist]</link> 
+  <regex> 
+  <name>makelist</name> 
+  <listrepeat><![CDATA[ 
+  <title>[B] Posicion [makelist.param1]  [COLOR orange][makelist.param2][/COLOR]  Puntos: [COLOR yellow][makelist.param3][/COLOR][/B]</title> 
+  <link>na</link> 
+<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+  ]]></listrepeat> 
+  <expres><![CDATA[parrilla.+?tr.+?"><td><p>(.+?)<.+?alt="(.+?)" src="(.+?)".+?<strong>.+?<strong>(.+?)<.+?<p> (.+?)<]]></expres> 
+  <page>https://www.teletexto.com/teletexto.asp?programacion=peliculas</page> 
+  </regex> 
+<thumbnail>https://i.imgur.com/49dfKw5.jpeg</thumbnail> 
+<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart> 
+</item>
 --------------------------------------------------------------------
   
 <item> 
