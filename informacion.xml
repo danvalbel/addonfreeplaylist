@@ -75,34 +75,18 @@
 
 --------------------------------------------------------------------
 
-<item> 
-<title>[B][COLOR white] Pelicula Emitidas Hoy [/B][/COLOR]</title>        
-<link>$doregex[makelist]</link> 
-  <regex> 
-  <name>makelist</name> 
-  <listrepeat><![CDATA[ 
-  <title>[B][COLOR orange][makelist.param1][/COLOR]   [COLOR yellow][makelist.param2][/COLOR]     [COLOR lime][makelist.param4][/COLOR][/B]</title> 
-  <link>na</link> 
-<thumbnail>https://i.imgur.com/b7hS/thumbnail>
-<fanart>https://i.imgur.com/b7hS</fanart>
-  ]]></listrepeat> 
-  <expres><![CDATA[parrilla.+?tr.+?"><td><p>(.+?)<.+?alt="(.+?)" src="(.+?)".+?<strong>.+?<strong>(.+?)<.+?<p> (.+?)<]]></expres>
-  <page>https://www.teletexto.com/teletexto.asp?programacion=peliculas</page> 
-  </regex>
-<thumbnail>https://www.teletexto.com/[makelist.param3]</thumbnail> 
-<fanart>https://www.teletexto.com/[makelist.param3]</fanart> 
-</item>
 
 <item> 
-<title>[B][COLOR white] Pelicula Emitidas Hoy [/B][/COLOR]</title>        
+<title>[B][COLOR white] Peliculas Emitidas Hoy [/B][/COLOR]</title>        
 <link>$doregex[makelist]</link> 
   <regex> 
   <name>makelist</name> 
   <listrepeat><![CDATA[ 
   <title>[B][COLOR orange][makelist.param1][/COLOR]   [COLOR yellow][makelist.param2][/COLOR]     [COLOR lime][makelist.param4][/COLOR][/B]</title> 
   <link>na</link> 
-<thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
-<fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+<thumbnail>https://www.teletexto.com/[makelist.param3]</thumbnail> 
+<fanart>https://www.teletexto.com/[makelist.param3]</fanart> 
+<info>[makelist.param5]</info>
   ]]></listrepeat> 
   <expres><![CDATA[parrilla.+?tr.+?"><td><p>(.+?)<.+?alt="(.+?)" src="(.+?)".+?<strong>.+?<strong>(.+?)<.+?<p> (.+?)<]]></expres> 
   <page>https://www.teletexto.com/teletexto.asp?programacion=peliculas</page> 
