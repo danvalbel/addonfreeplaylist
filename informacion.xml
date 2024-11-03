@@ -63,6 +63,7 @@
 <link>nunguno</link>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+<info>[prensa.param2] </info>
 ]]></listrepeat>
 <expres><![CDATA[<p class="">(.+?)<\/p> ]]></expres>
 <page>https://www.rtve.es[titulares.param1]</page>
