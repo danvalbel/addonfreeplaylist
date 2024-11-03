@@ -89,9 +89,8 @@
   <expres><![CDATA[parrilla.+?tr.+?"><td><p>(.+?)<.+?alt="(.+?)" src="(.+?)".+?<strong>.+?<strong>(.+?)<.+?<p> (.+?)<]]></expres>
   <page>https://www.teletexto.com/teletexto.asp?programacion=peliculas</page> 
   </regex>
-<thumbnail></thumbnail> 
-<fanart></fanart> 
-<info>[makelist.param3]</info> 
+<thumbnail>https://www.teletexto.com/[makelist.param3]</thumbnail> 
+<fanart>https://www.teletexto.com/[makelist.param3]</fanart> 
 </item>
 
 --------------------------------------------------------------------
