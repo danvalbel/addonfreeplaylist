@@ -1,7 +1,7 @@
 <items>
 
 <item>
-<title>[B]-*- Addon de Video IberiKa -*-[/B]</title>
+<title>[B]-*- Addon de Video privado solo para mi-*-[/B]</title>
 <link>na</link>
 <externallink>https://raw.githubusercontent.com/</externallink>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
@@ -23,6 +23,7 @@
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/main/informacion.xml</externallink>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+<info>Informacion variada: noticias, programacion...</info>
 </item>
 
 <item>
@@ -31,6 +32,7 @@
 <externallink>https://raw.githubusercontent.com/danvalbel/addonfreeplaylist/refs/heads/main/1.xml</externallink>
 <thumbnail>https://i.imgur.com/b7hSWTR.jpeg</thumbnail>
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
+<info>Television Autonomica y Nacional</info>
 </item>
 
 <item>
@@ -87,6 +89,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 <cookieJar></cookieJar>
 </regex>
+<info>Acceso a Podcast</info>
 </item>
 
 
