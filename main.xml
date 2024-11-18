@@ -109,5 +109,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://i.imgur.com/b7hSWTR.jpeg</fanart>
 </item>
 
+<item>
+    <title>Video Resuelto con URLResolver</title>
+    <link>plugin://script.module.urlresolver/?action=resolve&url=https://www.youtube.com/watch?v=FUnJzFT2i84</link>
+    <thumbnail>https://i.ytimg.com/vi/FUnJzFT2i84/maxresdefault.jpg</thumbnail>
+    <fanart>https://i.ytimg.com/vi/FUnJzFT2i84/maxresdefault.jpg</fanart>
+</item>
+
 
 </items>
