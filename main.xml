@@ -111,7 +111,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
     <title>Video Resuelto con URLResolver</title>
-    <link>plugin://script.module.urlresolver/?action=resolve&url=https://www.youtube.com/watch?v=FUnJzFT2i84</link>
+    <link>na</link>
+    <jsonrpc>plugin://script.module.urlresolver/?action=resolve&url=https://www.youtube.com/watch?v=FUnJzFT2i84</jsonrpc>
     <thumbnail>https://i.ytimg.com/vi/FUnJzFT2i84/maxresdefault.jpg</thumbnail>
     <fanart>https://i.ytimg.com/vi/FUnJzFT2i84/maxresdefault.jpg</fanart>
 </item>
